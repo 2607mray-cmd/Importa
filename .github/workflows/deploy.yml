@@ -1,0 +1,36 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.5.1
+        with:
+          branch: gh-pages                # The branch the action will push the built site to
+          folder: dist                    # The folder to deploy (Vite output)
+          clean: true                     # remove existing files before deploy
+          commit-message: "Deploy site: ${{ github.sha }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # If you want the action to create/preserve a CNAME file automatically:
+          cname: 'teatraders.info'        # ← replace with your primary domain or remove this line if you maintain CNAME manually
