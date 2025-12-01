@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master   # repo uses master branch
+      - master   # keep master since your repo uses master
 
 permissions:
   contents: write
@@ -30,7 +30,8 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.5.1
+        # Use the v4 major tag (stable) instead of a non-existent patch tag
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
