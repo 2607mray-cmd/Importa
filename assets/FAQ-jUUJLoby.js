@@ -1,0 +1,11 @@
+import{c as o,r,j as e}from"./index-Br_QVScR.js";/**
+ * @license lucide-react v0.555.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const i=[["path",{d:"m6 9 6 6 6-6",key:"qrunsl"}]],l=o("chevron-down",i);/**
+ * @license lucide-react v0.555.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const c=[["path",{d:"m18 15-6-6-6 6",key:"153udz"}]],d=o("chevron-up",c),u=[{question:"Do you provide samples?",answer:"Yes, samples can be provided for serious bulk buyers so you can check quality before placing a large order."},{question:"What is the minimum order quantity?",answer:"Our minimum order quantity is generally 30–50 kg, depending on the grade and packaging required."},{question:"Do you deliver outside West Bengal?",answer:"Yes, we ship all over India. We have reliable transport partners for timely delivery to Bihar, UP, Jharkhand, and other states."},{question:"Can you create custom blends?",answer:"Absolutely. We offer blend customization based on your specific taste requirements (strength, color, aroma) and budget."},{question:"Do you provide GST bill?",answer:"Yes, GST invoicing is available for all wholesale transactions."}],h=()=>{const[t,n]=r.useState(0);return e.jsx("section",{className:"py-16 bg-tea-50",children:e.jsxs("div",{className:"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8",children:[e.jsx("h2",{className:"text-3xl font-serif font-bold text-center text-tea-900 mb-10",children:"Frequently Asked Questions"}),e.jsx("div",{className:"space-y-4",children:u.map((a,s)=>e.jsxs("div",{className:"bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm transition-all hover:shadow-md",children:[e.jsxs("button",{className:"w-full flex justify-between items-center p-5 text-left focus:outline-none",onClick:()=>n(t===s?null:s),children:[e.jsx("span",{className:`font-semibold text-lg ${t===s?"text-tea-700":"text-gray-800"}`,children:a.question}),t===s?e.jsx(d,{className:"h-5 w-5 text-tea-600"}):e.jsx(l,{className:"h-5 w-5 text-gray-400"})]}),e.jsx("div",{className:`px-5 pb-5 text-gray-600 leading-relaxed transition-all duration-300 ${t===s?"block opacity-100":"hidden opacity-0"}`,children:a.answer})]},s))})]})})};export{h as default};
