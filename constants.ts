@@ -7,7 +7,7 @@ export const CONTACT_INFO: ContactInfo = {
   zip: "734005",
   phone: "919434308958",
   displayPhone: "+91 94343 08958",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.858273678037!2d88.42175631500656!3d26.71714498321045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e446c82a37706d%3A0x7c7d7455b850020!2sManish%20Tea%20Traders!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin",
+  mapEmbedUrl: "https://maps.google.com/maps?q=Manish+Tea+Traders+Siliguri&hl=en&z=14&output=embed",
   whatsappChannel: "https://whatsapp.com/channel/0029Vb7JBW8K5cD8gShxcT33"
 };
 
