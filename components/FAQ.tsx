@@ -21,6 +21,18 @@ const faqs = [
   {
     question: "Do you provide GST bill?",
     answer: "Yes, GST invoicing is available for all wholesale transactions."
+  },
+  {
+    question: "What is the shelf life of your tea?",
+    answer: "Our tea is sourced fresh. When stored correctly in airtight containers away from moisture and direct sunlight, it retains its quality and aroma for 12-18 months."
+  },
+  {
+    question: "Do you offer organic tea options?",
+    answer: "Yes, we can source organic Darjeeling and Green tea upon request. Please contact us for current availability and pricing."
+  },
+  {
+    question: "Can I visit your office in Siliguri?",
+    answer: "Yes, you are welcome to visit our office at Ganga Nagar, Mahananda Para, Siliguri to check samples and discuss your requirements in person. Please call us to schedule a visit."
   }
 ];
 
@@ -35,8 +47,8 @@ const FAQ: React.FC = () => {
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm transition-all hover:shadow-md"
             >
               <button
@@ -52,7 +64,7 @@ const FAQ: React.FC = () => {
                   <ChevronDown className="h-5 w-5 text-gray-400" />
                 )}
               </button>
-              <div 
+              <div
                 className={`px-5 pb-5 text-gray-600 leading-relaxed transition-all duration-300 ${openIndex === index ? 'block opacity-100' : 'hidden opacity-0'}`}
               >
                 {faq.answer}

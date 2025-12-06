@@ -7,13 +7,13 @@ const Hero: React.FC = () => {
     e.preventDefault();
     const element = document.getElementById('contact');
     if (element) {
-        const navHeight = 80;
-        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - navHeight;
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
+      const navHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
@@ -37,13 +37,13 @@ const Hero: React.FC = () => {
           ★ Top Rated Wholesale Supplier
         </span>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white font-serif mb-6 leading-tight drop-shadow-lg">
-          Premium Wholesale Tea <br />
-          <span className="text-tea-300">Supplier in Siliguri</span>
+          Premium Darjeeling Tea & <br />
+          <span className="text-tea-300">Assam CTC Tea</span>
         </h1>
         <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-100 mb-8 leading-relaxed font-light">
-          Fresh, consistent-quality tea delivered at competitive wholesale rates for retailers, distributors, hotels, cafés, and bulk buyers. <br className="hidden md:block"/> CTC • Assam • Nepal • Loose Tea
+          We provide high-quality <strong>Premium Darjeeling Tea & Assam CTC Tea</strong> sourced directly from the best estates in West Bengal. Our tea is perfect for retailers, distributors, hotels, cafés, and bulk buyers looking for authentic taste and competitive wholesale rates. <br className="hidden md:block" /> CTC • Assam • Nepal • Loose Tea
         </p>
-        
+
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
           <a
             href="#contact"
@@ -64,20 +64,20 @@ const Hero: React.FC = () => {
 
         {/* Verification Badges */}
         <div className="flex flex-wrap justify-center gap-4 sm:gap-8 items-center bg-white/10 backdrop-blur-md py-4 px-6 rounded-2xl border border-white/10 inline-flex mx-auto">
-            <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
-                <CheckCircle className="h-5 w-5 text-blue-400 fill-blue-400/20" /> 
-                <span className="drop-shadow-sm">Justdial Verified</span>
-            </div>
-            <div className="hidden sm:block w-px h-6 bg-white/30"></div>
-            <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
-                <CheckCircle className="h-5 w-5 text-green-400 fill-green-400/20" /> 
-                <span className="drop-shadow-sm">IndiaMART Verified</span>
-            </div>
-            <div className="hidden sm:block w-px h-6 bg-white/30"></div>
-            <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
-                <CheckCircle className="h-5 w-5 text-yellow-400 fill-yellow-400/20" />
-                <span className="drop-shadow-sm">FSSAI Registered</span>
-            </div>
+          <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
+            <CheckCircle className="h-5 w-5 text-blue-400 fill-blue-400/20" />
+            <span className="drop-shadow-sm">Justdial Verified</span>
+          </div>
+          <div className="hidden sm:block w-px h-6 bg-white/30"></div>
+          <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
+            <CheckCircle className="h-5 w-5 text-green-400 fill-green-400/20" />
+            <span className="drop-shadow-sm">IndiaMART Verified</span>
+          </div>
+          <div className="hidden sm:block w-px h-6 bg-white/30"></div>
+          <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
+            <CheckCircle className="h-5 w-5 text-yellow-400 fill-yellow-400/20" />
+            <span className="drop-shadow-sm">FSSAI Registered</span>
+          </div>
         </div>
       </div>
     </section>
