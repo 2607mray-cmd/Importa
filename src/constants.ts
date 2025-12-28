@@ -275,15 +275,19 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Leading wholesale tea supplier in Siliguri. Fresh CTC, Assam, and Darjeeling tea sourced directly from gardens. Best bulk rates for retailers.",
     heading: "Wholesale Tea Suppliers in Siliguri – CTC, Assam, Darjeeling Tea",
     content: `
-      <p>Siliguri is India’s largest tea trading centre, and <strong>Manish Tea Traders</strong> is situated right at the heart of it. We provide fresh tea at factory rates directly to buyers across India.</p>
-      <p>Being based in Siliguri gives us a unique advantage: we source directly from the tea auction centers and nearby gardens in Dooars and Darjeeling. This means zero middlemen and maximum freshness for our clients.</p>
-      <h3>Why Buy From Siliguri?</h3>
+      <p>Siliguri is the undisputed tea capital of North Bengal, serving as the critical gateway for the tea trade in India. <strong>Manish Tea Traders</strong> is headquartered right here, in the heart of the action at Mahananda Para. By operating from Siliguri, we eliminate multiple layers of middlemen that usually inflate costs in cities like Delhi or Mumbai.</p>
+      
+      <h3>The Siliguri Advantage</h3>
+      <p>Our proximity to the <strong>Siliguri Tea Auction Centre (STAC)</strong> allows us to bid for the freshest garden invoices the moment they are cataloged. Unlike traders in other states who receive stock weeks after production, our godowns store tea that was manufactured just days ago in the gardens of Dooars and Terai.</p>
+
+      <h3>Wholesale Supply for Local & Interstate Buyers</h3>
+      <p>We cater to a diverse clientele:</p>
       <ul>
-        <li><strong>Freshness:</strong> Tea reaches our godowns within days of production.</li>
-        <li><strong>Price:</strong> Wholesale rates that are unmatched in other cities.</li>
-        <li><strong>Variety:</strong> Access to the widest range of CTC and leaf teas.</li>
+        <li><strong>Local Retailers:</strong> We supply daily loose tea requirements to shops in Khalpara, Sevoke Road, and Hill Cart Road.</li>
+        <li><strong>Bulk Aggregators:</strong> We load full trucks (9-ton to 15-ton) for dispatch to Bihar, Uttar Pradesh, and Rajasthan.</li>
+        <li><strong>Packeteers:</strong> We provide unblended raw material for local brands starting their own packaging units.</li>
       </ul>
-      <p>We supply to local retailers in Mahananda Para, Khalpara, and Sevoke Road, as well as bulk buyers shipping to Kolkata and Bihar.</p>
+      <p>Visit our office to taste over 50+ varieties of CTC Leaf, Dust, and Orthodox teas before you book your order.</p>
     `
   },
   {
@@ -294,14 +298,17 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Bulk tea supply across Kolkata. We deliver fresh Assam and CTC tea from Siliguri to Kolkata, Howrah, and suburbs at wholesale prices.",
     heading: "Wholesale Tea Suppliers in Kolkata – CTC & Darjeeling Tea at Best Rates",
     content: `
-      <p>Kolkata is a city of tea lovers, and we ensure the demand is met with premium quality tea. Manish Tea Traders offers <strong>fast delivery to all areas of Kolkata</strong> including Burrabazar, Howrah, Salt Lake, and South Kolkata.</p>
-      <p>We dispatch goods via reliable transport services (road/rail) ensuring your stock arrives within 24-48 hours from Siliguri.</p>
-      <h3>Our Service in Kolkata</h3>
+      <p>Kolkata is a city that runs on "Cha". From the morning crimson cup to the evening "Adda", tea is an emotion here. Manish Tea Traders bridges the gap between the gardens of North Bengal and the teapots of Kolkata. We offer <strong>express wholesale tea delivery</strong> to the entire Kolkata Metropolitan Area.</p>
+
+      <h3>Serving Key Markets</h3>
       <ul>
-        <li><strong>Doorstep Delivery:</strong> Tie-ups with major transport carriers.</li>
-        <li><strong>Sample Testing:</strong> We send samples to Kolkata for approval before bulk booking.</li>
-        <li><strong>Consistent Blend:</strong> Regular supply for tea stall chains and office canteens.</li>
+        <li><strong>Burrabazar & Posta:</strong> We supply bulk gunny bags (30kg-35kg) to large trading houses in Kolkata's wholesale hub.</li>
+        <li><strong>Office Para (Dalhousie/Esplanade):</strong> We supply high-strength "Office Blend" tea perfect for the thousands of cups served daily in corporate canteens.</li>
+        <li><strong>Retail Shops:</strong> Small retailers in Salt Lake, Garia, and Dum Dum rely on us for consistent monthly supplies of our "Family Mixture" blend.</li>
       </ul>
+
+      <h3>Logistics & Delivery</h3>
+      <p>We utilize trusted transport services like V-Trans and local lorry services to ensure goods reach Kolkata within <strong>24-48 hours</strong> of dispatch from Siliguri. We also offer "Door Delivery" for bulk orders above 500kg, saving you the hassle of collecting from the transport depot.</p>
     `
   },
   {
@@ -312,8 +319,15 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Authentic Assam tea wholesale supplier. We source strong, malty tea from Assam gardens and distribute it across India.",
     heading: "Assam Tea Wholesale Supplier – Fresh From Estates to Your Business",
     content: `
-      <p>Assam tea is known worldwide for its strong body, bright color, and malty flavor. At Manish Tea Traders, we source our stock directly from the premium estates of the Brahmaputra Valley.</p>
-      <p>Whether you need secondary tea for blending or premium BP grades for packet sales, we have the right stock for you.</p>
+      <p>Assam produces the world's strongest tea, known for its rich, full-bodied malty flavor and deep amber color. At Manish Tea Traders, we source directly from the Upper Assam and Cachar regions, bypassing secondary auctions to give you the best rates.</p>
+
+      <h3>Why Our Assam Tea Stands Out</h3>
+      <p>Many suppliers mix cheaper Dooars tea with Assam to lower the price. We guarantee <strong>100% Pure Assam Leaf</strong> for our premium grades. </p>
+      <ul>
+        <li><strong>Second Flush Assam:</strong> Famous for its "tippy" appearance and sweet malty aroma. Ideal for premium packets.</li>
+        <li><strong>Kadak Assam CTC:</strong> The heavy-liquoring tea preferred by hotels and chaiwalas across North India.</li>
+      </ul>
+      <p>We supply raw material to repackagers who want to build a brand around the "Pure Assam" label. Our rigorous tasting process ensures that every sack delivers that signature punchy taste.</p>
     `
   },
   {
@@ -324,8 +338,16 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Premium Darjeeling tea wholesaler. Authentic GI tagged tea for exporters, luxury hotels, and tea boutiques.",
     heading: "Darjeeling Tea Wholesale – First Flush, Second Flush & Autumnal",
     content: `
-      <p>Known as the 'Champagne of Teas', Darjeeling Tea is for those who appreciate the finer things. We supply 100% authentic Darjeeling leaf tea to speciality buyers.</p>
-      <p>Our catalog includes the floral First Flush, the muscatel Second Flush, and the smooth Autumnal blends. Perfect for gift packs and high-end cafes.</p>
+      <p>Darjeeling Tea needs no introduction. It is the geographic indication (GI) product of India, celebrated globally. Located just hours from the hills, we have direct access to some of the most prestigious gardens in the Darjeeling district.</p>
+      
+      <h3>Seasonal Sourcing for Connoisseurs</h3>
+      <p>We specialize in sourcing seasonal flushes for exporters and high-end boutiques:</p>
+      <ul>
+        <li><strong>Spring (First Flush):</strong> Light, floral, and greenish. The most expensive and sought-after harvest.</li>
+        <li><strong>Summer (Second Flush):</strong> The classic "Muscatel" flavor with notes of stone fruit and nuts. A favorite for afternoon tea.</li>
+        <li><strong>Monsoon & Autumn:</strong> Stronger, darker cups ideal for blends and commercially viable price points.</li>
+      </ul>
+      <p>We provide authentic invoices with Garden Marks, ensuring you get exactly what you pay for. Ideal for gifting companies and luxury hospitality chains.</p>
     `
   },
   {
@@ -336,13 +358,18 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Top rated tea wholesaler supplying Patna and Bihar. Direct transport from Siliguri for CTC, Dust and Leaf tea. Best rates for distributors.",
     heading: "Tea Wholesaler in Patna – Direct Supply from Siliguri",
     content: `
-      <p>Bihar is one of our largest markets. We supply daily truckloads of fresh CTC tea to <strong>Patna</strong> and surrounding districts. Retailers in Patna prefer our strong 'Kadak' blends that work perfectly with milk.</p>
-      <p>We have established transport links to Patna, ensuring your goods arrive safely and cheaply. Stop buying from middlemen and buy direct from the Siliguri source.</p>
-      <h3>Popular in Patna:</h3>
+      <p>Bihar is traditionally a market that demands <strong>Strong Tea ("Kadak Chai")</strong>. Consumers in Patna, Gaya, and Muzaffarpur prefer tea that boils quickly and yields a thick, golden liquor even with less milk. Manish Tea Traders is a dominant supplier in this region.</p>
+
+      <h3>Tailored Blends for Bihar</h3>
+      <p>We have developed specific "Bihar Special" blends that are high on color and strength:</p>
       <ul>
-        <li><strong>Lal Ghoda Type Blend:</strong> Strong red liquor tea.</li>
-        <li><strong>Tea Dust:</strong> For hotel and roadside tea stalls.</li>
+        <li><strong>Lal Ghoda Style:</strong> A reddish-liquoring tea that mimics major brands but at wholesale prices.</li>
+        <li><strong>Mota Dana (BOPL):</strong> Large granule tea preferred in rural Bihar for its re-heating capability.</li>
+        <li><strong>Hotel Dust:</strong> Super-strong dust for the bustling tea stalls near Patna Junction and Boring Road.</li>
       </ul>
+
+      <h3>Seamless Transport to Patna</h3>
+      <p>We have daily truck dispatches to Patna. Goods are usually offloaded at transport nagars in zero mile or bypass areas. We guarantee safe transit and standard 26kg-35kg jute bag packing that withstands rough handling. Stop paying extra to local agents—buy direct from Siliguri.</p>
     `
   },
   {
@@ -353,8 +380,15 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Reliable bulk tea supplier for Ranchi and Jharkhand. We provide Assam and Dooars tea at factory prices with GST billing.",
     heading: "Wholesale Tea Supplier in Ranchi & Jharkhand",
     content: `
-      <p>Manish Tea Traders is a preferred supplier for many wholesalers in <strong>Ranchi, Jamshedpur, and Dhanbad</strong>. We understand the Jharkhand market preference for strong, brisk tea.</p>
-      <p>We offer customized blends that suit the local water quality, ensuring a perfect cup every time. Delivery available via road transport to all major Jharkhand cities.</p>
+      <p>The tea culture in Jharkhand is unique, with a preference for brisk, fresh-tasting tea. Manish Tea Traders supplies to major wholesalers in <strong>Ranchi, Jamshedpur (Tatanagar), and Dhanbad</strong>. We understand that the water quality in parts of Jharkhand affects brewing, so we offer blends specifically tested for hard water.</p>
+
+      <h3>Why Ranchi Retailers Choose Us</h3>
+      <ul>
+        <li><strong>Consistent Quality:</strong> We don't change our blend ratios month-to-month. Your customers get the same taste every time.</li>
+        <li><strong>Range:</strong> From premium Assam leaf for posh colonies in Ranchi to strong dust for industrial canteens in Jamshedpur.</li>
+        <li><strong>Credit Facilities:</strong> We offer credit terms to long-standing partners with verified trade references.</li>
+      </ul>
+      <p>Whether you strictly need "Dooars Tea" or a "Assam-Dooars Mix", we can customize the ratio to hit your target buying price.</p>
     `
   },
   {
@@ -365,8 +399,16 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Buy wholesale tea in Delhi directly from Siliguri. We supply Khari Baoli traders and Delhi tea brands with premium Assam and CTC tea.",
     heading: "Wholesale Tea Supplier in Delhi – Connecting Siliguri to the Capital",
     content: `
-      <p>Delhi is the consumption capital of North India. We supply to traders in <strong>Khari Baoli</strong> and tea packagers across NCR. By sourcing from us, you get the tea before it hits the secondary markets.</p>
-      <p>We specialize in premium Assam Leaf for the educated Delhi consumer and strong CTC for the mass market.</p>
+      <p>Delhi is one of the largest consumption centers for tea in India. Traders in <strong>Khari Baoli</strong> and consumer brands across NCR rely on a steady influx of high-quality Assam tea. Manish Tea Traders acts as your procurement arm in the East.</p>
+
+      <h3>Serving the Delhi Palate</h3>
+      <p>Delhi consumers are sophisticated—they want flavor <em>and</em> strength. We supply:</p>
+      <ul>
+        <li><strong>Premium Assam Seconds:</strong> For loose tea retailers in South Delhi and Gurgaon who sell at ₹400+ per kg.</li>
+        <li><strong>Desi Chai Blends:</strong> Strong CTC mixes for tea stalls in Old Delhi and Noida.</li>
+        <li><strong>Masala Chai Bases:</strong> Robust teas that hold their ground against tough spices like ginger and cardamom.</li>
+      </ul>
+      <p>We offer full truckload (FTL) and part-load delivery to Delhi-NCR transport hubs. All interstate documentation (E-Way bills) is handled by our team.</p>
     `
   },
   {
@@ -377,8 +419,15 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Supplier of strong dust and CTC tea for Mumbai's cutting chai market. Bulk delivery to Vashi APMC and retailers.",
     heading: "Tea Wholesalers in Mumbai – Fueling the City That Never Sleeps",
     content: `
-      <p>Mumbai runs on Cutting Chai. We supply the specialized <strong>Strong Dust and BP blends</strong> required to make the perfect Mumbai-style tea.</p>
-      <p>We ship regularly to Vashi APMC and distributors across Greater Mumbai. Our tea retains its strength even when boiled for long periods, making it ideal for the local style.</p>
+      <p>Mumbai runs on "Cutting Chai". The perfect Cutting requires a tea that is incredibly strong, boils fast, and doesn't get bitter. Manish Tea Traders supplies the specialized <strong>PD (Pekoe Dust) and RD (Red Dust)</strong> grades that are the secret behind Mumbai's famous tea.</p>
+
+      <h3>Supply to Vashi & Beyond</h3>
+      <p>We regularly ship bulk consignments to the Vashi APMC market and distributors in Thane, Dadar, and Kalyan. </p>
+      <ul>
+        <li><strong>For Amruttulya Chains:</strong> We provide a consistent "Hotel Blend" that matches the sweetness and thickness required for these tea chains.</li>
+        <li><strong>For Households:</strong> We supply premium Assam CTC that caters to the Gujarati and Maharashtrian families who enjoy a rich morning cup.</li>
+      </ul>
+      <p>Our packaging is moisture-proof to withstand Mumbai's humid climate, ensuring the tea stays fresh from Siliguri to your warehouse.</p>
     `
   },
   {
@@ -389,8 +438,15 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Wholesale tea supplier for Bangalore cafes and retailers. Fresh Nilgiri, Assam, and Darjeeling tea available in bulk.",
     heading: "Bulk Tea Supplier in Bangalore – Premium Quality Guaranteed",
     content: `
-      <p>Bangalore's tea culture is evolving. From traditional darshinis to modern tea cafes, we supply them all. We offer premium <strong>Orthodox Leaf</strong> for brewing and strong dust for filter-style tea.</p>
-      <p>Fast logistics ensure our tea reaches Karnataka fresh and flavorful.</p>
+      <p>Bangalore has a dual tea culture: the traditional "By-Two" coffee/tea shops and the modern, upscale tea cafes. Manish Tea Traders caters to the entire spectrum of the Karnataka market.</p>
+
+      <h3>Products for Bangalore</h3>
+      <ul>
+        <li><strong>Strong Dust:</strong> For the thousands of Darshinis and canteens that serve filter-style hot tea.</li>
+        <li><strong>Orthodox Leaf:</strong> For the growing number of boutique cafes in Indiranagar and Koramangala serving brewing teas.</li>
+        <li><strong>Green Tea:</strong> Sourced from organic gardens for the health-conscious IT crowd.</li>
+      </ul>
+      <p>We utilize efficient rail logistics to reach Bangalore, keeping freight costs low so you can enjoy better margins.</p>
     `
   },
   {
@@ -401,8 +457,14 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Best wholesale tea rates in Jaipur. We supply strong CTC tea suitable for Rajasthani masala chai. Direct delivery from Siliguri.",
     heading: "Tea Wholesaler in Jaipur – The Taste of Rajasthan",
     content: `
-      <p>In Rajasthan, tea needs to be bold to stand up to the spices in Masala Chai. We create special <strong>Rajasthani Blends</strong> that are high on strength and color.</p>
-      <p>Serving Jaipur, Jodhpur, and Udaipur with consistent quality throughout the year.</p>
+      <p>In Rajasthan, tea is more than a drink; it's a ritual. The preference here is for <strong>Masala Chai</strong>, which requires a robust, strong base tea that doesn't lose its character when boiled with milk, ginger, and spices.</p>
+      <p>We supply specialized "Rajasthan Blends" that are heavy on Assam BP and OF grades. These teas have a deep colour that appeals to the visual preference of the Rajasthani buyer.</p>
+      <h3>Serving the Golden Triangle</h3>
+      <p>Our distribution network covers Jaipur, Jodhpur, and Udaipur. We supply to:</p>
+      <ul>
+        <li><strong>Kirana Wholesalers:</strong> Bulk sacks for resale in local mandis.</li>
+        <li><strong>Tourism Sector:</strong> Premium packs for heritage hotels and resorts.</li>
+      </ul>
     `
   },
   {
@@ -413,8 +475,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Bulk tea supplier for Lucknow and Uttar Pradesh. We provide economical CTC blends for high-volume sales.",
     heading: "Wholesale Tea Supplier in Lucknow & Uttar Pradesh",
     content: `
-      <p>Uttar Pradesh is a massive market for tea. We supply budget-friendly yet tasty blends to wholesalers in <strong>Lucknow, Kanpur, and Varanasi</strong>.</p>
-      <p>Our economy blends (Priya Gold type) are a hit in this region, offering maximum cups per kg.</p>
+      <p>Uttar Pradesh is one of India's most price-sensitive yet high-volume markets. We understand that in cities like Lucknow, Kanpur, and Varanasi, the "price-to-quality" ratio is key. We specialize in creating <strong>Economy Blends</strong> that taste premium but cost less.</p>
+      <p>Our "Awadh Blend" is a hit in Lucknow—perfect for the slow-boiled tea culture of the city. We ensure regular supply during festive seasons and winters when demand peaks.</p>
     `
   },
   {
@@ -425,7 +487,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Supplying strong tea dust and granules to Chennai. Perfect for tea shops and homes. Bulk orders welcome.",
     heading: "Tea Wholesaler in Chennai – Strong Tea for South India",
     content: `
-      <p>While coffee is king, Chennai has a huge market for strong tea. We supply high-quality <strong>Tea Dust and Assam Granules</strong> that rival local varieties in strength.</p>
+      <p>While Chennai is the heartland of filter coffee, the demand for strong tea is rapidly growing. We supply high-grade <strong>Assam Dust and Broken grades</strong> that rival the strength of local southern teas.</p>
+      <p>Our tea is specifically curated to act as a perfect base for "Ginger Tea" and "Dum Tea" sold across Chennai's tea stalls. We provide moisture-proof packaging to protect stock from the coastal humidity.</p>
     `
   },
   {
@@ -436,8 +499,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Special tea blends for Hyderabadi Irani Chai. Wholesale supplier of dust and hotel blends in Hyderabad.",
     heading: "Wholesale Tea for Hyderabad – Perfect for Irani Chai",
     content: `
-      <p>The famous Irani Chai of Hyderabad needs a specific type of tea blend—usually a mix of strong dust and high-grown leaf. We have mastered this blend.</p>
-      <p>Supply available for cafe chains and wholesale markets in Begum Bazar.</p>
+      <p>The legendary <strong>Irani Chai</strong> of Hyderabad requires a unique tea profile: usually a very strong dust or fine fanning that can be decocted for hours. We have cracked this code.</p>
+      <p>We supply specialized blends to the wholesalers of Begum Bazar who distribute to the city's cafes. Our tea yields a thick, creamy liquor that pairs perfectly with Osmania biscuits.</p>
     `
   },
   {
@@ -448,7 +511,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Supplier for Amruttulya tea franchises in Pune. Consistent taste and affordable wholesale prices.",
     heading: "Tea Wholesaler in Pune – Partner for Amruttulya Chains",
     content: `
-      <p>Pune has seen a boom in 'Amruttulya' tea outlets. We supply the base tea for many of these successful chains. Consistency is our promise.</p>
+      <p>Pune is the birthplace of the modern "Amruttulya" tea franchise model. These businesses rely on one thing: <strong>Consistency</strong>. A cup of tea in Kothrud must taste the same as one in Viman Nagar.</p>
+      <p>Manish Tea Traders provides standardized year-round blends ("Pune Special") that ensure your franchise maintains its signature taste without fluctuation. We offer contract pricing for bulk annual contracts.</p>
     `
   },
   {
@@ -459,7 +523,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Wholesale tea supplier for Surat and Gujarat. Premium quality CTC tea for households and gift packs.",
     heading: "Tea Supplier in Surat – Premium Quality for Gujarat",
     content: `
-      <p>Gujarati families appreciate quality. We supply premium garden-fresh CTC (BP/BOP) to retailers in Surat and Ahmedabad.</p>
+      <p>In Surat and Ahmedabad, quality is never compromised. The market here prefers <strong>Premium Assam CTC (BP Grade)</strong> that is bold, golden, and aromatic. We supply garden-fresh stocks that are free from adulteration.</p>
+      <p>Our tea is widely used by retailers who create "Gift Packs" during Diwali and weddings. We ensure the tea has a clean black appearance ("Bloom") that customers look for before buying.</p>
     `
   },
   {
@@ -470,7 +535,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Direct tea supply to Muzaffarpur and North Bihar. Cheapest wholesale rates for loose tea.",
     heading: "Tea Wholesaler in Muzaffarpur – Gateway to North Bihar",
     content: `
-      <p>We are a major supplier for the Muzaffarpur wholesale market. From here, our tea reaches Sitamarhi, Darbhanga, and Motihari.</p>
+      <p>Muzaffarpur acts as a key distribution hub for North Bihar (Sitamarhi, Champaran, Darbhanga). We supply trucks of <strong>Loose Tea (Khula Chai)</strong> to the mandi here.</p>
+      <p>Our rates are competitive enough for you to resell to smaller village markets and still make a healthy profit. We offer a "Janata Blend" specifically for price-conscious rural markets.</p>
     `
   },
   {
@@ -481,7 +547,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Strong tea for hard working people. Wholesale supplier in Dhanbad and Bokaro.",
     heading: "Tea Supplier in Dhanbad – Strong Tea for the Coal Capital",
     content: `
-      <p>We supply robust, strong liquor tea that is preferred in the industrial belts of Dhanbad and Bokaro.</p>
+      <p>The industrial workforce of Dhanbad and Bokaro demands tea that wakes them up. We supply high-caffeine, high-strength blends suitable for colliery canteens and industrial mess halls.</p>
+      <p>Our tea cuts through fatigue. We offer bulk 50kg packaging for institutional buyers in the coal belt.</p>
     `
   },
   {
@@ -490,9 +557,10 @@ export const LOCATION_PAGES: LocationPage[] = [
     slug: "tea-wholesaler-indore-mp",
     title: "Tea Wholesaler in Indore | Madhya Pradesh Supply",
     metaDescription: "Leading tea supplier for Indore and MP. Poha-Jalebi needs great tea, and we supply it.",
-    heading: "Tea Wholesaler in Indore – Heart of Madhya Pradesh",
+    heading: "Tea Wholesaler in Indore – The Heart of Madhya Pradesh",
     content: `
-      <p>Indore is a trading hub, and we supply bulk loose tea to repackagers and wholesalers across MP from here.</p>
+      <p>Indore is famous for its food culture, and no breakfast of Poha-Jalebi is complete without chai. We supply the wholesale markets of Indore with <strong>Malwa-suited blends</strong>.</p>
+      <p>Whether you need tea for street-side stalls in Sarafa Bazaar or premium cafes in Palasia, we have the right grade. We ship via transport directly from Siliguri to Indore transport nagar.</p>
     `
   },
   {
@@ -503,7 +571,8 @@ export const LOCATION_PAGES: LocationPage[] = [
     metaDescription: "Wholesale tea delivery to Nagpur. Connecting Siliguri tea to Central India.",
     heading: "Tea Supplier in Nagpur – Central India's Tea Hub",
     content: `
-      <p>Nagpur's central location makes it a key market. We supply fresh Dooars tea which is very popular in this region.</p>
+      <p>Nagpur's strategic location makes it a distribution point for Vidarbha and MP. We supply fresh <strong>Dooars CTC Tea</strong> which is preferred here for its bright liquor and sweetness.</p>
+      <p>Our logistics network ensures that Nagpur receives stock faster than most other Central Indian cities, keeping your inventory fresh and rotating.</p>
     `
   }
 ];

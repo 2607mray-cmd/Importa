@@ -59,5 +59,7 @@ export interface SEOProps {
   description: string;
   keywords?: string;
   canonicalUrl?: string;
-  schema?: Record<string, any>;
+  image?: string;
+  noindex?: boolean;
+  schema?: Record<string, any> | Record<string, any>[];
 }

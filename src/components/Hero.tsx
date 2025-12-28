@@ -23,6 +23,12 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=2574&auto=format&fit=crop"
+          srcSet="
+            https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=640&auto=format&fit=crop 640w,
+            https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=1024&auto=format&fit=crop 1024w,
+            https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=2574&auto=format&fit=crop 2574w
+          "
+          sizes="(max-width: 640px) 100vw, 100vw"
           alt="Lush Green Tea Garden Landscape in Darjeeling"
           className="w-full h-full object-cover"
           fetchPriority="high"

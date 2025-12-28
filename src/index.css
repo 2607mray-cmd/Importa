@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tea-50: #fcfdf5;
+  --color-tea-100: #f7fae6;
+  --color-tea-200: #ebf4c5;
+  --color-tea-300: #daea9a;
+  --color-tea-400: #c1dd66;
+  --color-tea-500: #a5c83b;
+  --color-tea-600: #81a32b;
+  --color-tea-700: #627d24;
+  --color-tea-800: #4f6322;
+  --color-tea-900: #425321;
+  --color-brand-gold: #d4af37;
+  --color-brand-dark: #2d3436;
+  --font-sans: "Inter", "sans-serif";
+  --font-serif: "Merriweather", "serif";
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+}
