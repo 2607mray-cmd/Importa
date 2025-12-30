@@ -6,188 +6,198 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/about-us</loc>
+    <loc>https://teatraders.info/about-us/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/contact-us</loc>
+    <loc>https://teatraders.info/contact-us/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/locations</loc>
+    <loc>https://teatraders.info/locations/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog</loc>
+    <loc>https://teatraders.info/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/services/private-label-tea</loc>
+    <loc>https://teatraders.info/services/private-label-tea/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/products/ctc-tea</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://teatraders.info/products/tea-dust</loc>
+    <loc>https://teatraders.info/products/ctc-tea/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/products/orthodox-leaf</loc>
+    <loc>https://teatraders.info/products/tea-dust/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/siliguri-tea-supplier</loc>
+    <loc>https://teatraders.info/products/orthodox-leaf/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://teatraders.info/wholesale-supply/siliguri-tea-supplier/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/kolkata-tea-supplier</loc>
+    <loc>https://teatraders.info/wholesale-supply/kolkata-tea-supplier/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/assam-tea-supplier</loc>
+    <loc>https://teatraders.info/wholesale-supply/assam-tea-supplier/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/darjeeling-tea-supplier</loc>
+    <loc>https://teatraders.info/wholesale-supply/darjeeling-tea-supplier/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-patna-bihar</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-patna-bihar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-supplier-ranchi-jharkhand</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-supplier-ranchi-jharkhand/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/wholesale-tea-supplier-delhi</loc>
+    <loc>https://teatraders.info/wholesale-supply/wholesale-tea-supplier-delhi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-mumbai</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-mumbai/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-supplier-bangalore</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-supplier-bangalore/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-jaipur-rajasthan</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-jaipur-rajasthan/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-supplier-lucknow-up</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-supplier-lucknow-up/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-chennai</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-chennai/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-supplier-hyderabad</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-supplier-hyderabad/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-pune</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-pune/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-supplier-surat-gujarat</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-supplier-surat-gujarat/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-muzaffarpur</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-muzaffarpur/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-supplier-dhanbad</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-supplier-dhanbad/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-indore-mp</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-wholesaler-indore-mp/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/wholesale-supply/tea-supplier-nagpur</loc>
+    <loc>https://teatraders.info/wholesale-supply/tea-supplier-nagpur/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/wholesale-tea-markets-india</loc>
+    <loc>https://teatraders.info/blog/wholesale-tea-markets-india/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/choose-ctc-tea</loc>
+    <loc>https://teatraders.info/blog/choose-ctc-tea/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/siliguri-tea-market</loc>
+    <loc>https://teatraders.info/blog/siliguri-tea-market/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/darjeeling-tea-flush-guide</loc>
+    <loc>https://teatraders.info/blog/darjeeling-tea-flush-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/start-tea-brand-india</loc>
+    <loc>https://teatraders.info/blog/start-tea-brand-india/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/assam-vs-darjeeling</loc>
+    <loc>https://teatraders.info/blog/assam-vs-darjeeling/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/identify-good-tea</loc>
+    <loc>https://teatraders.info/blog/identify-good-tea/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/ctc-tea-grades</loc>
+    <loc>https://teatraders.info/blog/ctc-tea-grades/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/buy-tea-from-siliguri</loc>
+    <loc>https://teatraders.info/blog/buy-tea-from-siliguri/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://teatraders.info/blog/private-label-tea-guide</loc>
+    <loc>https://teatraders.info/blog/private-label-tea-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teatraders.info/privacy-policy/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://teatraders.info/terms-of-service/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
