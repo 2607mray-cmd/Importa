@@ -12,6 +12,7 @@ export interface Product {
   moq: string;
   stockStatus: string;
   specifications: Record<string, string>;
+  slug: string;
 }
 
 export interface NavItem {

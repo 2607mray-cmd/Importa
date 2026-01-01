@@ -58,8 +58,8 @@ const Products: React.FC<ProductsProps> = ({ onProductSelect }) => {
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${activeCategory === cat
-                  ? "bg-tea-600 text-white shadow-lg transform scale-105"
-                  : "bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-tea-300"
+                ? "bg-tea-600 text-white shadow-lg transform scale-105"
+                : "bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-tea-300"
                 }`}
             >
               {cat}
@@ -109,7 +109,7 @@ const Products: React.FC<ProductsProps> = ({ onProductSelect }) => {
 
                   <div className="grid grid-cols-2 gap-3">
                     <Link
-                      to={getProductLink(product.category)}
+                      to={`/product/${product.slug}/`}
                       className="w-full text-center bg-white hover:bg-gray-50 text-gray-700 font-medium py-2 rounded-lg transition-all border border-gray-200 flex items-center justify-center gap-2 text-sm"
                     >
                       <Info className="h-4 w-4" /> View Details

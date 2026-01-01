@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import WhatsAppButton from '../../components/WhatsAppButton';
@@ -116,9 +116,14 @@ const ProductCategory: React.FC = () => {
                                             <span className="font-bold text-tea-800">{product.priceRange}</span>
                                         </div>
 
-                                        <a href="/contact-us" className="block w-full text-center bg-tea-600 text-white font-medium py-3 rounded-lg hover:bg-tea-700 transition-colors mt-4">
-                                            Get Latest Price
-                                        </a>
+                                        <div className="grid grid-cols-2 gap-3 mt-4">
+                                            <Link to={`/product/${product.slug}/`} className="block w-full text-center bg-white text-gray-700 border border-gray-200 font-medium py-3 rounded-lg hover:bg-gray-50 transition-colors">
+                                                Details
+                                            </Link>
+                                            <a href="/contact-us" className="block w-full text-center bg-tea-600 text-white font-medium py-3 rounded-lg hover:bg-tea-700 transition-colors">
+                                                Quote
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

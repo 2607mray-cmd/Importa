@@ -34,6 +34,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p1",
     name: "Black CTC Tea (All Grades)",
+    slug: "black-ctc-tea",
     category: "CTC",
     description: "Available in OF, BP, BOP, PD, RD and Dust. Strong liquor, perfect for daily consumption and blending.",
     longDescription: "Sourced directly from the fertile plains of the Dooars and Assam, our Black CTC Tea is the backbone of the Indian tea market. We don't just sell 'tea'; we provide specific grades tailored to your business needs. Whether you need the large, flavorful grains of BP (Broken Pekoe) for household packets or the rapid-infusing OF (Orange Fannings) for tea stalls that demand instant color, we have it all. Our stock is vacuum-tested for moisture to ensure it stays crisp and fresh. This is strictly non-blended, garden-fresh stock, ideal for wholesalers who want to create their own proprietary blends.",
@@ -55,6 +56,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p2",
     name: "Rajni Gold",
+    slug: "rajni-gold",
     category: "Blend",
     description: "A premium CTC blend offering consistent taste and great margin for retailers.",
     longDescription: "Rajni Gold is our flagship proprietary blend, crafted specifically for the competitive retail market. We understand that your customers want the same taste every month, which is why we adhere to a strict blending formula using 60% Assam BP for malty flavor and 40% Dooars OF for rich color. It strikes the perfect balance—strong enough for the morning 'kadak chai' lover but smooth enough to not taste bitter. Retailers love Rajni Gold because it offers the premium quality of top brands at a price that allows for excellent profit margins.",
@@ -76,6 +78,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p3",
     name: "Begam Gold",
+    slug: "begam-gold",
     category: "Blend",
     description: "Rich and dark liquor tea sourced from the finest gardens in Dooars.",
     longDescription: "Begam Gold is designed for the segment of the market that believes 'Tea must look like Tea'. Sourced primarily from select heavy-liquoring gardens in the Dooars region, this blend produces a deep, dark red cup (Lal Ghoda style) the moment milk is added. It is exceptionally popular in regions like Bihar and UP where tea is boiled with milk for extended periods. Begam Gold holds its strength and color even after rigorous boiling, making it a favorite among families who enjoy a hearty, full-bodied cup.",
@@ -95,6 +98,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p4",
     name: "Saavan Tea",
+    slug: "saavan-tea",
     category: "CTC",
     description: "Premium CTC tea known for its bold colour and freshness.",
     longDescription: "Saavan Tea captures the spirited essence of the monsoon harvest. Plucked during the peak rainy season when the bushes are lush and full of life, this tea is characterized by its 'Zest' and 'Briskness'. It offers a unique, refreshing grassy note that wakes up the palate. The granules are clean, black, and uniform, ensuring your customers see quality the moment they open the packet. It is an excellent choice for markets that prefer a fresher, lighter cup over the heavy, muddy varietals.",
@@ -115,6 +119,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p5",
     name: "Priya Gold",
+    slug: "priya-gold",
     category: "Blend",
     description: "An economical yet flavorful blend suitable for tea stalls and daily use.",
     longDescription: "Priya Gold is engineered for high yield and commercial viability. We created this blend specifically for Tea Stalls (Chaiwalas), Canteens, and Offices where the cost per cup matters most. It is a robust mix of medium-sized granules and high-strength dust that extracts quickly and provides more cups per kilogram than standard blends. Despite its economical price point, it does not compromise on the 'kick' required to satisfy a tired customer. It is the workhorse of our catalog.",
@@ -134,6 +139,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p6",
     name: "Sabnam Gold",
+    slug: "sabnam-gold",
     category: "Blend",
     description: "Balanced strong blend favored by tea shops for its quick color and strong taste.",
     longDescription: "Sabnam Gold is our 'Hotel Special' blend that sits perfectly between premium quality and commercial strength. It is favored by mid-range restaurants and cafes that want to serve a quality cup without the premium price tag. The blend features a higher percentage of fine fannings which allows for rapid color release, saving fuel and time in commercial kitchens. It produces a golden-brown liquor that looks appetizing and tastes smooth, lacking the harsh bitterness often found in cheaper hotel blends.",
@@ -153,6 +159,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p7",
     name: "Nepal High Grown",
+    slug: "nepal-high-grown",
     category: "Orthodox",
     description: "Light flavour, smooth taste, and premium quality from Himalayan gardens.",
     longDescription: "Sourced from the misty, high-altitude slopes of Ilam in Eastern Nepal, this tea is the best-kept secret in the tea world. It shares the same geographical DNA as Darjeeling tea but comes at a fraction of the cost. The leaves are twisted and wiry, brewing into a pale amber liquor with distinct floral and fruity notes. It is an exceptional choice for retailers looking to introduce a 'Premium Leaf Tea' to their customers who appreciate aroma over strength. It drinks beautifully without milk.",
@@ -172,6 +179,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p8",
     name: "Tea Dust (Hotel Special)",
+    slug: "tea-dust-hotel-special",
     category: "Dust",
     description: "Super strong dust grade tea. Brews quickly with strong liquor.",
     longDescription: "This is raw power in a cup. Our Hotel Special Dust is not 'leftover' powder; it is premium Primary Dust (PD) graded tea designed for maximum extraction. Upon contact with boiling water, it explodes with color and strength. It is specifically curated for the roadside tea stall market and railway canteens where 'Kadak Chai' is the only requirement. It cuts through the thickest milk and strongest ginger/cardamom spices to ensure the tea taste is never lost.",
@@ -191,6 +199,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p9",
     name: "Darjeeling Orthodox",
+    slug: "darjeeling-orthodox",
     category: "Orthodox",
     description: "Premium leaf tea with the signature muscatel flavor for refined taste.",
     longDescription: "The Champagne of Teas. Sourced from GI-tagged gardens in the Darjeeling district, our Orthodox collection caters to the connoisseur. We offer specific seasonal flushes: the light, floral First Flush for spring lovers, and the rounded, muscatel Second Flush for the classic experience. This is whole-leaf luxury, perfect for gifting, high-end cafes, or export to markets that value aroma above all else. A cup of this tea is an experience, not just a beverage.",
@@ -210,6 +219,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p10",
     name: "Assam Granules Tea",
+    slug: "assam-granules-tea",
     category: "CTC",
     description: "Rich color, strong aroma, ideal for hotels & tea stalls.",
     longDescription: "Straight from the Brahmaputra valley, our Assam Granules define 'Boldness'. Unlike Dooars tea which is lighter, this Assam stock has a heavy body and a deep malty kick. It produces a rich, reddish-brown liquor that looks stunning in a glass. It is ideal for morning breakfast blends or for customers who complain that their current tea tastes 'watery'. This tea has the body to hold up sugar and milk perfectly.",
@@ -229,6 +239,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p11",
     name: "Private Label Packaging",
+    slug: "private-label-packaging",
     category: "Packaging",
     description: "Stand-up pouches, paper boxes, tin packs - ready for your brand.",
     longDescription: "Launch your own tea brand without investing millions in a factory. We provide a complete end-to-end Private Label solution. You simply choose the blend (e.g., our Rajni Gold) and the packaging style (Stand-up pouch, Box, or Jar). We handle the printing, filling, and sealing. You receive a finished, retail-ready product delivered to your warehouse. We support low MOQs to help startups test the market before scaling up.",
@@ -248,6 +259,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p12",
     name: "Tea Bags (Bulk)",
+    slug: "tea-bags-bulk",
     category: "Tea Bags",
     description: "Customisable tea bags for hotels, brands & corporates.",
     longDescription: "Convenience meets quality. We supply high-grade tea bags in bulk for hotels, hospitals, and corporate offices. Unlike standard market tea bags that use leftover dust, we fill ours with quality fannings that ensure a proper brew. We offer both single-chamber and double-chamber bags, with options for custom tags featuring your company logo. Available in Green Tea, Assam Black, and Masala Chai variants.",

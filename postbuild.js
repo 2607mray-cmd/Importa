@@ -46,6 +46,18 @@ const routes = [
     'blog/challenges-opportunities-indian-tea-export',
     'blog/sustainable-tea-farming-wholesale',
     'blog/technology-modern-tea-trading',
+    'product/black-ctc-tea',
+    'product/rajni-gold',
+    'product/begam-gold',
+    'product/saavan-tea',
+    'product/priya-gold',
+    'product/sabnam-gold',
+    'product/nepal-high-grown',
+    'product/tea-dust-hotel-special',
+    'product/darjeeling-orthodox',
+    'product/assam-granules-tea',
+    'product/private-label-packaging',
+    'product/tea-bags-bulk',
     'privacy-policy',
     'terms-of-service'
 ];
@@ -75,6 +87,7 @@ ${routes.map(route => {
     let priority = 0.8;
     if (route === '') priority = 1.0;
     if (route.startsWith('products/')) priority = 0.9;
+    if (route.startsWith('product/')) priority = 0.85;
     if (route.startsWith('blog/')) priority = 0.7;
     if (route === 'privacy-policy' || route === 'terms-of-service') priority = 0.5;
 

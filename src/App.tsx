@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProductCategory from './pages/products/ProductCategory';
+import ProductDetail from './pages/products/ProductDetail';
 import PrivateLabelPage from './pages/services/PrivateLabelPage';
 import LocationPage from './pages/locations/LocationPage';
 import LocationsIndex from './pages/locations/LocationsIndex';
@@ -50,6 +51,7 @@ const App: React.FC = () => {
 
                 {/* Product Silos */}
                 <Route path="/products/:slug" element={<ProductCategory />} />
+                <Route path="/product/:slug" element={<ProductDetail />} />
 
                 {/* Services */}
                 <Route path="/services/private-label-tea" element={<PrivateLabelPage />} />
