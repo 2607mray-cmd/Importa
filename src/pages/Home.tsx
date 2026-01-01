@@ -69,7 +69,7 @@ const Home: React.FC = () => {
                                     "opens": "09:00",
                                     "closes": "20:00"
                                 },
-                                "telephone": "+919434308958"
+                                "telephone": "+917001958588"
                             },
                             {
                                 "@type": "BreadcrumbList",

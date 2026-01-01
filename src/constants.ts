@@ -5,8 +5,8 @@ export const CONTACT_INFO: ContactInfo = {
   city: "Siliguri",
   state: "West Bengal",
   zip: "734005",
-  phone: "919434308958",
-  displayPhone: "+91 94343 08958",
+  phone: "917001958588",
+  displayPhone: "+91 70019 58588",
   mapEmbedUrl: "https://maps.google.com/maps?q=Manish+Tea+Traders+Siliguri&hl=en&z=14&output=embed",
   whatsappChannel: "https://whatsapp.com/channel/0029Vb7JBW8K5cD8gShxcT33"
 };

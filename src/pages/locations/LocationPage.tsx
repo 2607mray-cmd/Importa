@@ -70,10 +70,10 @@ const LocationPage: React.FC = () => {
                             We dispatch regularly to {locationData.city}. Contact us for current rates and transport details.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="tel:+919434308958" className="bg-tea-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-tea-700 transition-colors">
+                            <a href="tel:+917001958588" className="bg-tea-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-tea-700 transition-colors">
                                 Call Now
                             </a>
-                            <a href="https://wa.me/919434308958?text=Hi,%20I%20need%20wholesale%20rates%20for%20delivery%20in%20your%20area" className="bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition-colors">
+                            <a href="https://wa.me/917001958588?text=Hi,%20I%20need%20wholesale%20rates%20for%20delivery%20in%20your%20area" className="bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition-colors">
                                 WhatsApp Us
                             </a>
                         </div>

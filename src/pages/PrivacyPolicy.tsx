@@ -46,7 +46,7 @@ const PrivacyPolicy: React.FC = () => {
                     </ul>
 
                     <h2>5. Contact Us</h2>
-                    <p>If you have questions about this policy, contact us at +91 94343 08958 or visit our office in Siliguri.</p>
+                    <p>If you have questions about this policy, contact us at +91 70019 58588 or visit our office in Siliguri.</p>
                 </div>
             </main>
             <Footer />
