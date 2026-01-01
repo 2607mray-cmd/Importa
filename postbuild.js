@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const routes = [
+    '', // Home
     'about-us',
     'contact-us',
     'locations',
@@ -40,6 +41,11 @@ const routes = [
     'blog/ctc-tea-grades',
     'blog/buy-tea-from-siliguri',
     'blog/private-label-tea-guide',
+    'blog/future-tea-ecommerce-india',
+    'blog/price-wholesale-tea-competitively',
+    'blog/challenges-opportunities-indian-tea-export',
+    'blog/sustainable-tea-farming-wholesale',
+    'blog/technology-modern-tea-trading',
     'privacy-policy',
     'terms-of-service'
 ];
@@ -50,6 +56,7 @@ const indexHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf-8');
 console.log('--- Generating Static Routes for GitHub Pages SEO ---');
 
 routes.forEach(route => {
+    if (route === '') return;
     const routeDir = path.join(distDir, route);
     if (!fs.existsSync(routeDir)) {
         fs.mkdirSync(routeDir, { recursive: true });
@@ -58,4 +65,28 @@ routes.forEach(route => {
     console.log(`Verified: /${route}`);
 });
 
-console.log('--- Static Routes Completed Successfully ---');
+console.log('--- Generating Sitemap.xml ---');
+
+const domain = 'https://teatraders.info';
+const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${routes.map(route => {
+    const url = `${domain}/${route}${route ? '/' : ''}`;
+    let priority = 0.8;
+    if (route === '') priority = 1.0;
+    if (route.startsWith('products/')) priority = 0.9;
+    if (route.startsWith('blog/')) priority = 0.7;
+    if (route === 'privacy-policy' || route === 'terms-of-service') priority = 0.5;
+
+    return `  <url>
+    <loc>${url}</loc>
+    <changefreq>${route === '' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+}).join('\n')}
+</urlset>`;
+
+fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapContent);
+fs.writeFileSync(path.join('public', 'sitemap.xml'), sitemapContent); // Keep source in sync too
+
+console.log('--- Static Routes & Sitemap Completed Successfully ---');

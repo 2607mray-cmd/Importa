@@ -31,7 +31,7 @@ const LocationPage: React.FC = () => {
                 <SEO
                     title={locationData.title}
                     description={locationData.metaDescription}
-                    canonicalUrl={`https://teatraders.info/wholesale-supply/${slug}`}
+                    canonicalUrl={`https://teatraders.info/wholesale-supply/${slug}/`}
                     image="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9"
                     schema={[{
                         "@context": "https://schema.org",

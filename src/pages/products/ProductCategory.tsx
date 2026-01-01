@@ -46,7 +46,7 @@ const ProductCategory: React.FC = () => {
                 <SEO
                     title={categoryData.title}
                     description={categoryData.desc}
-                    canonicalUrl={`https://teatraders.info/products/${slug}`}
+                    canonicalUrl={`https://teatraders.info/products/${slug}/`}
                     image={`https://teatraders.info/images/products/${slug.replace('-', '_')}_user.jpg`} // Fallback guess or pick a good default
                     schema={[{
                         "@context": "https://schema.org",

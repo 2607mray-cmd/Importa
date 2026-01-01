@@ -25,7 +25,7 @@ const BlogPost: React.FC = () => {
                         title={`${post.title} | Manish Tea Traders Blog`}
                         description={post.excerpt}
                         keywords={post.keywords || ''}
-                        canonicalUrl={`https://teatraders.info/blog/${post.slug}`}
+                        canonicalUrl={`https://teatraders.info/blog/${post.slug}/`}
                         image={post.imageUrl}
                         schema={{
                             "@context": "https://schema.org",
