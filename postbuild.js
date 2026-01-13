@@ -2,68 +2,75 @@
 import fs from 'fs';
 import path from 'path';
 
-const routes = [
+// Helper to extract slugs from a specific section of the file
+function extractSlugs(content, webSectionMarker, nextSectionMarker) {
+    const start = content.indexOf(webSectionMarker);
+    if (start === -1) return [];
+
+    let end = content.length;
+    if (nextSectionMarker) {
+        const nextStart = content.indexOf(nextSectionMarker);
+        if (nextStart !== -1) end = nextStart;
+    }
+
+    const section = content.substring(start, end);
+    const slugRegex = /slug:\s*"([^"]+)"/g;
+    const slugs = [];
+    let match;
+    while ((match = slugRegex.exec(section)) !== null) {
+        slugs.push(match[1]);
+    }
+    return slugs;
+}
+
+// Read constants.ts
+const constantsPath = path.resolve('src', 'constants.ts');
+const constantsContent = fs.readFileSync(constantsPath, 'utf-8');
+
+// Extract dynamic routes
+const productSlugs = extractSlugs(constantsContent, 'export const PRODUCTS', 'export const LOCATION_PAGES');
+const locationSlugs = extractSlugs(constantsContent, 'export const LOCATION_PAGES', 'export const BLOG_POSTS');
+const blogSlugs = extractSlugs(constantsContent, 'export const BLOG_POSTS', null); // Until end of file
+
+console.log(`Found ${productSlugs.length} Products`);
+console.log(`Found ${locationSlugs.length} Locations`);
+console.log(`Found ${blogSlugs.length} Blog Posts`);
+
+// Static Routes
+const staticRoutes = [
     '', // Home
     'about-us',
     'contact-us',
     'locations',
     'blog',
     'services/private-label-tea',
+    'privacy-policy',
+    'terms-of-service',
+    // Product Categories (Hardcoded as they rarely change)
     'products/ctc-tea',
     'products/tea-dust',
-    'products/orthodox-leaf',
-    'wholesale-supply/siliguri-tea-supplier',
-    'wholesale-supply/kolkata-tea-supplier',
-    'wholesale-supply/assam-tea-supplier',
-    'wholesale-supply/darjeeling-tea-supplier',
-    'wholesale-supply/tea-wholesaler-patna-bihar',
-    'wholesale-supply/tea-supplier-ranchi-jharkhand',
-    'wholesale-supply/wholesale-tea-supplier-delhi',
-    'wholesale-supply/tea-wholesaler-mumbai',
-    'wholesale-supply/tea-supplier-bangalore',
-    'wholesale-supply/tea-wholesaler-jaipur-rajasthan',
-    'wholesale-supply/tea-supplier-lucknow-up',
-    'wholesale-supply/tea-wholesaler-chennai',
-    'wholesale-supply/tea-supplier-hyderabad',
-    'wholesale-supply/tea-wholesaler-pune',
-    'wholesale-supply/tea-supplier-surat-gujarat',
-    'wholesale-supply/tea-wholesaler-muzaffarpur',
-    'wholesale-supply/tea-supplier-dhanbad',
-    'wholesale-supply/tea-wholesaler-indore-mp',
-    'wholesale-supply/tea-supplier-nagpur',
-    'blog/wholesale-tea-markets-india',
-    'blog/choose-ctc-tea',
-    'blog/siliguri-tea-market',
-    'blog/darjeeling-tea-flush-guide',
-    'blog/start-tea-brand-india',
-    'blog/assam-vs-darjeeling',
-    'blog/identify-good-tea',
-    'blog/ctc-tea-grades',
-    'blog/buy-tea-from-siliguri',
-    'blog/private-label-tea-guide',
-    'blog/future-tea-ecommerce-india',
-    'blog/price-wholesale-tea-competitively',
-    'blog/challenges-opportunities-indian-tea-export',
-    'blog/sustainable-tea-farming-wholesale',
-    'blog/technology-modern-tea-trading',
-    'product/black-ctc-tea',
-    'product/rajni-gold',
-    'product/begam-gold',
-    'product/saavan-tea',
-    'product/priya-gold',
-    'product/sabnam-gold',
-    'product/nepal-high-grown',
-    'product/tea-dust-hotel-special',
-    'product/darjeeling-orthodox',
-    'product/assam-granules-tea',
-    'product/private-label-packaging',
-    'product/tea-bags-bulk',
-    'privacy-policy',
-    'terms-of-service'
+    'products/orthodox-leaf'
+];
+
+// Combine all routes
+const routes = [
+    ...staticRoutes,
+    ...locationSlugs.map(slug => `wholesale-supply/${slug}`),
+    ...blogSlugs.map(slug => `blog/${slug}`),
+    ...productSlugs.map(slug => `product/${slug}`)
 ];
 
 const distDir = path.resolve('dist');
-const indexHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf-8');
+// Ensure dist exists (if running without build, though unlikely)
+if (!fs.existsSync(distDir)) {
+    console.warn('Dist directory does not exist. Skipping index.html copy.');
+}
+
+const indexHtmlPath = path.join(distDir, 'index.html');
+let indexHtml = '';
+if (fs.existsSync(indexHtmlPath)) {
+    indexHtml = fs.readFileSync(indexHtmlPath, 'utf-8');
+}
 
 console.log('--- Generating Static Routes for GitHub Pages SEO ---');
 
@@ -73,9 +80,15 @@ routes.forEach(route => {
     if (!fs.existsSync(routeDir)) {
         fs.mkdirSync(routeDir, { recursive: true });
     }
-    fs.writeFileSync(path.join(routeDir, 'index.html'), indexHtml);
-    console.log(`Verified: /${route}`);
+    // Only write index.html if we have it
+    if (indexHtml) {
+        fs.writeFileSync(path.join(routeDir, 'index.html'), indexHtml);
+    }
+    // Optional: Log fewer lines to avoid clutter
+    // console.log(`Verified: /${route}`); 
 });
+
+console.log(`Verified ${routes.length} routes.`);
 
 console.log('--- Generating Sitemap.xml ---');
 
@@ -99,7 +112,14 @@ ${routes.map(route => {
 }).join('\n')}
 </urlset>`;
 
-fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapContent);
-fs.writeFileSync(path.join('public', 'sitemap.xml'), sitemapContent); // Keep source in sync too
+if (fs.existsSync(distDir)) {
+    fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapContent);
+}
+
+// Determine public dir
+const publicDir = path.resolve('public');
+if (fs.existsSync(publicDir)) {
+    fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapContent); // Keep source in sync
+}
 
 console.log('--- Static Routes & Sitemap Completed Successfully ---');
