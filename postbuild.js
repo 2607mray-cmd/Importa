@@ -113,13 +113,13 @@ ${routes.map(route => {
 </urlset>`;
 
 if (fs.existsSync(distDir)) {
-    fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapContent);
+    fs.writeFileSync(path.join(distDir, 'sitemap-index.xml'), sitemapContent);
 }
 
 // Determine public dir
 const publicDir = path.resolve('public');
 if (fs.existsSync(publicDir)) {
-    fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapContent); // Keep source in sync
+    fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), sitemapContent); // Keep source in sync
 }
 
 console.log('--- Static Routes & Sitemap Completed Successfully ---');

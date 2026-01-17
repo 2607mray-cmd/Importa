@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBP Product Dashboard | Manish Tea Traders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; }
+        .copy-toast { visibility: hidden; min-width: 200px; margin-left: -100px; background-color: #059669; color: #fff; text-align: center; border-radius: 8px; padding: 12px; position: fixed; z-index: 1000; left: 50%; bottom: 30px; border: 1px solid #047857; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .copy-toast.show { visibility: visible; animation: fadein 0.3s, fadeout 0.3s 2.7s; }
+        @keyframes fadein { from { bottom: 0; opacity: 0; } to { bottom: 30px; opacity: 1; } }
+        @keyframes fadeout { from { bottom: 30px; opacity: 1; } to { bottom: 0; opacity: 0; } }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-slate-900 leading-tight">GBP Product Dashboard</h1>
+                <p class="text-slate-500 mt-1 italic uppercase text-xs tracking-widest font-bold">Internal Procurement Utility - Local Only</p>
+            </div>
+            <div class="flex gap-2">
+                 <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold border border-emerald-200 uppercase">Specialist B2B Copy Active</span>
+                 <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold border border-blue-200 uppercase">12 Products</span>
+            </div>
+        </header>
+
+        <div class="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-800 text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider">Product Info</th>
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider">Pricing</th>
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider">Google Description (B2B)</th>
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider">Landing URL</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Black CTC Tea (All Grades)</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p1</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">CTC</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹130.00 – ₹320.00</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p1">This collection of primary Black CTC tea grades serves as a foundational component for large-batch wholesalers and packet tea brand owners across India. Sourced directly from major gardens in both the Assam and Dooars regions, these raw tea granules are selected for their high density and moisture stability. The liquor profile is characterized by a robust and strong body with a brisk infusion that holds its character even when blended. It is an ideal stock for institutional procurement, offering specific grades such as Broken Pekoe, Orange Fannings, and Primary Dust to meet diverse market demands. By sourcing this garden-fresh stock directly from the foothills, buyers benefit from significant competitive margins and the elimination of secondary trading commissions. This product ensures a reliable supply chain for businesses requiring high-volume raw material for retail packaging. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p1')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 995</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p1">https://teatraders.info/product/black-ctc-tea/</div>
+                                        <button onclick="copyToClipboard('url-p1')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Rajni Gold</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p2</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Blend</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹1200 / piece</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p2">Rajni Gold is a proprietary premium CTC tea blend specifically engineered for the retail market and family-mixture packeteers. This consistent, year-round blend uses a precise 60:40 ratio of malty Assam Broken Pekoe and color-rich Dooars Orange Fannings to deliver a strong, kadak profile. The resulting liquor is bright and thick, maintaining a smooth flavor even after the addition of milk. It is primarily utilized by independent grocers and established tea brands that require a fixed taste profile to ensure customer loyalty. The commercial value of Rajni Gold lies in its blend consistency and excellent yield, allowing retailers to compete with national brands while maintaining superior profit margins. This high-grade blend is now available in bulk packaging and durable jars for ease of transport and storage. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p2')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 922</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p2">https://teatraders.info/product/rajni-gold/</div>
+                                        <button onclick="copyToClipboard('url-p2')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Begam Gold</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p3</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Blend</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹1200 / piece</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p3">Begam Gold is a heavy-liquoring CTC tea blend designed specifically for the demanding markets of Bihar and Uttar Pradesh where strength and color are paramount. Sourced from select garden invoices in the Dooars region, this blend produces a deep, dark red infusion that is characteristic of the popular Lal Ghoda style teas. It is highly resistant to flavor loss during rigorous boiling, making it a favorite for traditional milk-based tea preparations. Wholesalers and local distributors find Begam Gold advantageous due to its high cuppage and ability to cut through hard water conditions common in the northern plains. This robust product offers a commercial edge by providing the intense sensory profile that wholesale consumers expect at a price point that supports high-volume distribution. It is a workhorse for traders targeting the semi-urban and rural mass-market segment. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p3')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 985</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p3">https://teatraders.info/product/begam-gold/</div>
+                                        <button onclick="copyToClipboard('url-p3')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Saavan Tea</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p4</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">CTC</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">Contact for Price</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p4">Saavan Tea represents a premium selection of garden-fresh CTC tea plucked during the peak monsoon season when the tea bushes are at their most vibrant. This BOP L grade tea is noted for its refreshing sensory profile, featuring a distinct briskness and subtle grassy notes that provide a clean, light palate traditional teas often lack. The large, black, and uniform granules are aesthetically superior, making this an excellent choice for premium loose tea retailers and boutique brands. Sourced from reputable estates in West Bengal, Saavan Tea is vacuum-tested for freshness to ensure its lively character is preserved from the garden to the final user. Its primary utility is for customers who prefer a fresher, more aromatic cup over heavy-liquoring varietals. This product offers retailers a unique selling point based on seasonality and purity, attracting health-conscious and quality-focused consumers. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p4')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 1013</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p4">https://teatraders.info/product/saavan-tea/</div>
+                                        <button onclick="copyToClipboard('url-p4')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Priya Gold</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p5</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Blend</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹1200 / piece</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p5">Priya Gold is an economical CTC tea blend engineered for maximum yield and commercial viability in high-volume environments. This robust mixture of medium granules and high-strength dust is specifically formulated for tea stalls, office canteens, and large-scale industrial catering services. The liquor is exceptionally thick and heavy, designed to extract rapidly and provide a higher number of cups per kilogram compared to standard granules. Despite its cost-effective pricing, Priya Gold delivers a strong caffeine kick and deep color that satisfy the requirements of a commercial chai preparation. Sourced from high-yielding gardens in Assam and Dooars, it provides a consistent solution for business owners who must balance cost-per-cup with flavor intensity. This product is a staple for distributors supplying the Horeca segment where high cuppage translates directly into better business margins. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p5')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 1009</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p5">https://teatraders.info/product/priya-gold/</div>
+                                        <button onclick="copyToClipboard('url-p5')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Sabnam Gold</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p6</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Blend</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹1200 / piece</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p6">Sabnam Gold is a specialized hotel-grade CTC tea blend that strikes a perfect balance between premium sensory quality and commercial requirements. This blend is prominently used by mid-range restaurants and cafes that serve standardized milk tea. It features a high percentage of fine fannings which allows for a rapid color release, significantly reducing the fuel and time consumed in professional kitchens. The liquor is a bright golden-brown with a balanced strength that appeals to a wide demographic of casual tea drinkers. By sourcing this consistent blend, hotel owners can ensure that every cup served across the day maintains the same visual and taste appeal. Sabnam Gold is packaged in bulk jars to provide protection against moisture and environmental factors in busy commercial environments. It is a strategic choice for businesses looking to upgrade their service quality without significantly increasing procurement costs. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p6')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 1040</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p6">https://teatraders.info/product/sabnam-gold/</div>
+                                        <button onclick="copyToClipboard('url-p6')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Nepal High Grown</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p7</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Orthodox</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹350 - ₹600 / kg</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p7">Nepal High Grown Orthodox tea is a premium whole-leaf product sourced from the high-altitude Himalayan estates of the Ilam region. This SFTGFOP1 grade tea is selected for its highly aromatic and floral profile, offering a light amber liquor with distinct fruity notes. It shares a geographic heritage with Darjeeling teas but provides a unique value proposition for retailers looking to offer high-end leaf tea at competitive wholesale price points. The leaves are carefully twisted and wiry, indicating the gentle orthodox processing that preserves the delicate essential oils of the plant. It is primarily used by tea boutiques, luxury hotels, and export-focused traders who cater to consumers preferring tea without milk. The commercial benefit of Nepal High Grown lies in its exceptional quality-to-price ratio, allowing boutique brands to build a premium image with high margins. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p7')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 987</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p7">https://teatraders.info/product/nepal-high-grown/</div>
+                                        <button onclick="copyToClipboard('url-p7')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Tea Dust (Hotel Special)</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p8</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Dust</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹120 - ₹180 / kg</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p8">Tea Dust Hotel Special is a primary dust grade product specifically curated for high-velocity environments such as railway canteens, bus stations, and roadside tea stalls. This Pekoe Dust (PD) grade tea is sourced from selected Dooars gardens to provide the highest possible extraction rate and instant color release. The sensory profile is exceptionally strong, designed to maintain its dominance even when boiled with heavy milk and pungent local spices like ginger or cardamom. Unlike secondary dust, this primary stock is free from fiber and stalks, ensuring a clean and consistent brew every time. It is the preferred choice for commercial tea makers who need to serve hundreds of cups an hour without compromising on the kick that daily commuters expect. The value to a wholesaler lies in the massive demand for this grade across the Indian transit network and its massive volume throughput. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p8')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 1000</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p8">https://teatraders.info/product/tea-dust-hotel-special/</div>
+                                        <button onclick="copyToClipboard('url-p8')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Darjeeling Orthodox</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p9</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Orthodox</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹400 - ₹1200 / kg</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p9">Our Darjeeling Orthodox Second Flush is a GI-tagged premium leaf tea sourced from the most prestigious gardens in the Darjeeling district. This selection is world-renowned for its signature muscatel flavor profile, offering a rounded, fruity aroma and a bright amber cup. As a whole-leaf tea, it is processed using traditional methods that maintain the integrity of the leaf and its complex essential oils. This luxury product is essential for high-end gifting companies, luxury hospitality chains, and export-oriented tea traders who target the global connoisseur market. Each lot is hand-selected based on its seasonal character, ensuring that the muscatel notes are prominent and authentic. Procurement of this authentic stock provides retailers an authoritative product to anchor their premium collection, supported by full garden-mark transparency. It represents the pinnacle of Indian tea craftsmanship. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p9')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 1012</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p9">https://teatraders.info/product/darjeeling-orthodox/</div>
+                                        <button onclick="copyToClipboard('url-p9')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Assam Granules Tea</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p10</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">CTC</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹180 - ₹280 / kg</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p10">Assam Granules Tea is a bold and malty CTC product sourced directly from the Brahmaputra valley, the heart of the world's strongest tea production. This BP and BOP grade selection is chosen for its heavy-liquoring body and deep reddish-brown color, providing a level of strength that lighter varietals cannot match. It is designed for buyers who require a hearty, full-bodied tea that serves as an excellent base for traditional Indian milk tea. The malty aroma and thick mouthfeel make it highly popular among wholesalers in North and Central India. The commercial advantage of this product is its consistent body and rich visual appeal, ensuring that retail packets look and taste premium. It is an ideal anchor stock for any loose tea retailer or packeteer seeking to deliver the authentic Assam experience at competitive direct-from-source wholesale rates. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p10')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 963</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p10">https://teatraders.info/product/assam-granules-tea/</div>
+                                        <button onclick="copyToClipboard('url-p10')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Private Label Packaging</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p11</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Packaging</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">Enquire Now</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p11">Our Private Label Packaging service provides an end-to-end manufacturing solution for startups and retailers looking to build their own proprietary tea brand. Located in Siliguri, we offer direct access to the freshest tea garden invoices, which we then blend and package according to your specific marketing requirements. Our capabilities include a wide range of packaging formats such as stand-up pouches, custom boxes, jars, and tin packs with low minimum order quantities to support brand testing. We handle the entire procurement, blending, and sealing process, allowing brand owners to focus exclusively on marketing and sales. This service eliminates the need for expensive capital investment in machinery and labor, offering a fast-track route to the Indian retail market. Commercial partners benefit from our deep industry knowledge and access to competitive wholesale rates for high-quality tea stock. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p11')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 1014</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p11">https://teatraders.info/product/private-label-packaging/</div>
+                                        <button onclick="copyToClipboard('url-p11')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="hover:bg-slate-50 transition-colors group">
+                                <td class="px-6 py-4">
+                                    <div class="font-bold text-slate-900 text-lg">Tea Bags (Bulk)</div>
+                                    <div class="text-xs text-slate-400 font-mono">ID: p12</div>
+                                    <div class="mt-1 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 uppercase border border-slate-200">Tea Bags</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-xl font-black text-emerald-600">₹0.80 - ₹2.50 / piece</div>
+                                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Bulk Rate</div>
+                                </td>
+                                <td class="px-6 py-4 w-1/2">
+                                    <div class="relative group/copy">
+                                        <div class="text-sm text-slate-700 leading-relaxed pr-12 line-clamp-2 group-hover/copy:line-clamp-none transition-all duration-300 bg-slate-50 p-4 rounded-lg border border-slate-200/60 shadow-inner italic" id="desc-p12">Our bulk selection of Tea Bags provides a convenient and professional solution for hotels, corporate offices, and hospitals requiring individual beverage service. Unlike the standard market options that often use low-grade dust, we fill our bags with high-quality fannings from Assam and Dooars to ensure a deep-brewing, flavorful experience. We offer multiple variants including Green Tea, Assam Black, and Masala Chai, all designed for rapid infusion in individual cups. The filter paper used is food-grade and heat-sealed to preserve the internal aroma and ensure safety. This product is available for private labeling with custom tags featuring your corporate logo or brand identity. The primary B2B value lies in the ease of storage, consistent portion control, and the professional image it provides to institutional users. These wholesale jars and boxes are a reliable choice for high-volume hospitality procurement. Supplied by a wholesale tea supplier based in Siliguri, serving Bihar, Uttar Pradesh, and West Bengal.</div>
+                                        <button onclick="copyToClipboard('desc-p12')" class="absolute top-2 right-2 px-3 py-1.5 bg-emerald-600 text-white rounded-md shadow-md hover:bg-emerald-700 transition-all font-bold text-[10px]">
+                                            COPY
+                                        </button>
+                                        <div class="text-[10px] text-slate-400 mt-2 flex justify-between font-bold">
+                                            <span>LENGTH: 1026</span>
+                                            <span class="text-emerald-600 animate-pulse group-hover/copy:visible invisible">CLICK TO COPY DESCRIPTION</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-[10px] text-blue-600 font-mono font-bold bg-blue-50 p-2 rounded border border-blue-200/50 break-all select-all shadow-sm" id="url-p12">https://teatraders.info/product/tea-bags-bulk/</div>
+                                        <button onclick="copyToClipboard('url-p12')" class="w-full py-2 bg-white text-blue-600 border-2 border-blue-600 rounded-lg text-[10px] font-black hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                            COPY URL
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <footer class="mt-12 text-center text-slate-400 text-[10px] uppercase font-bold tracking-[0.2em] pb-12">
+            Manish Tea Traders &bull; Advanced GBP Management Interface &bull; V2.0
+        </footer>
+    </div>
+
+    <div id="toast" class="copy-toast font-bold uppercase tracking-widest text-xs">Copied!</div>
+
+    <script>
+        function copyToClipboard(id) {
+            const text = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = document.getElementById('toast');
+                toast.innerText = id.startsWith('url') ? 'URL COPIED!' : 'DESCRIPTION COPIED!';
+                toast.className = 'copy-toast show';
+                setTimeout(() => { toast.className = toast.className.replace('show', ''); }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
