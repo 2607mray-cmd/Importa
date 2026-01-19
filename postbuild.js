@@ -98,7 +98,7 @@ routes.forEach(route => {
 
 console.log(`Verified ${routes.length} routes.`);
 
-console.log('--- Generating Sitemap.xml ---');
+console.log('--- Generating Sitemap_in.xml ---');
 
 const domain = 'https://teatraders.info';
 const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
@@ -121,13 +121,13 @@ ${routes.map(route => {
 </urlset>`;
 
 if (fs.existsSync(distDir)) {
-    fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapContent);
+    fs.writeFileSync(path.join(distDir, 'sitemap_in.xml'), sitemapContent);
 }
 
 // Determine public dir
 const publicDir = path.resolve('public');
 if (fs.existsSync(publicDir)) {
-    fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapContent); // Keep source in sync
+    fs.writeFileSync(path.join(publicDir, 'sitemap_in.xml'), sitemapContent); // Keep source in sync
 }
 
 console.log('--- Static Routes & Sitemap Completed Successfully ---');
