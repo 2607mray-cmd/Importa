@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import WhatsAppButton from '../../components/WhatsAppButton';
 import SEO from '../../components/SEO';
-import { BLOG_POSTS } from '../../constants';
+import { BLOG_POSTS } from '../../data/blogPosts';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
 
 const BlogPost: React.FC = () => {

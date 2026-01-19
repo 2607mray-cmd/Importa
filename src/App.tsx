@@ -20,6 +20,9 @@ import NotFound from './pages/NotFound';
 
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import RequestSamples from './pages/RequestSamples';
+import TeaGrades from './pages/TeaGrades';
+import BlendCalculator from './pages/BlendCalculator';
 
 // ScrollToTop component that listens to route changes
 import { useLocation } from 'react-router-dom';
@@ -48,6 +51,9 @@ const App: React.FC = () => {
                 <Route path="/contact-us" element={<ContactPage />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-of-service" element={<TermsOfService />} />
+                <Route path="/request-free-tea-samples" element={<RequestSamples />} />
+                <Route path="/tea-grades" element={<TeaGrades />} />
+                <Route path="/tea-blend-calculator" element={<BlendCalculator />} />
 
                 {/* Product Silos */}
                 <Route path="/products/:slug" element={<ProductCategory />} />

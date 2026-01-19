@@ -35,7 +35,10 @@ const Footer: React.FC = () => {
               <li><Link to="/about-us" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/products/ctc-tea" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">Products</Link></li>
               <li><Link to="/blog" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">Tea Blog</Link></li>
+              <li><Link to="/tea-blend-calculator" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">Tea Blend Calculator</Link></li>
+              <li><Link to="/tea-grades" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">Tea Grades Guide</Link></li>
               <li><Link to="/locations" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors">Service Areas</Link></li>
+              <li><Link to="/request-free-tea-samples" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors font-semibold text-yellow-400">Request Free Samples</Link></li>
               <li className="pt-2 border-t border-tea-800/50 mt-2">
                 <Link to="/privacy-policy" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-white transition-colors text-xs">Privacy Policy</Link>
               </li>

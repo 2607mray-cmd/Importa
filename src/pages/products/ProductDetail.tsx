@@ -1,7 +1,7 @@
 
 import React, { useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { PRODUCTS } from "../../constants";
+import { PRODUCTS } from "../../data/products";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import SEO from "../../components/SEO";
@@ -157,19 +157,20 @@ const ProductDetail: React.FC = () => {
                     <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
                         <div className="lg:col-span-2">
                             <h2 className="text-3xl font-serif font-bold text-stone-900 mb-6">Detailed Product Overview</h2>
-                            <div className="prose prose-stone max-w-none text-stone-600 leading-relaxed text-lg">
-                                {product.longDescription}
-                            </div>
+                            <div
+                                className="prose prose-stone max-w-none text-stone-600 leading-relaxed text-lg"
+                                dangerouslySetInnerHTML={{ __html: product.longDescription || '' }}
+                            />
                         </div>
-                        <div className="bg-white p-8 rounded-3xl shadow-xl border border-stone-100">
-                            <h3 className="text-xl font-bold text-stone-900 mb-6 border-b border-stone-100 pb-4 flex items-center gap-2">
-                                <Package className="text-tea-600" size={24} /> Technical Specs
+                        <div className="bg-white p-6 rounded-2xl shadow-xl border border-stone-100 lg:sticky lg:top-28">
+                            <h3 className="text-lg font-bold text-stone-900 mb-4 border-b border-stone-100 pb-3 flex items-center gap-2">
+                                <Package className="text-tea-600" size={20} /> Technical Specs
                             </h3>
-                            <dl className="space-y-4">
+                            <dl className="space-y-2">
                                 {Object.entries(product.specifications).map(([key, value]) => (
-                                    <div key={key} className="flex justify-between items-center py-2 border-b border-stone-50 last:border-0">
-                                        <dt className="text-sm font-bold text-stone-400 uppercase tracking-widest">{key}</dt>
-                                        <dd className="text-sm font-semibold text-stone-800">{value}</dd>
+                                    <div key={key} className="flex justify-between items-start py-1.5 border-b border-stone-50 last:border-0 border-dashed">
+                                        <dt className="text-[10px] font-bold text-stone-400 uppercase tracking-widest pt-1">{key}</dt>
+                                        <dd className="text-sm font-semibold text-stone-800 text-right max-w-[60%] leading-tight">{value}</dd>
                                     </div>
                                 ))}
                             </dl>

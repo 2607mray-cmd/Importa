@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, MessageCircle, CheckCircle } from "lucide-react";
-import { CONTACT_INFO } from "../constants";
+import { CONTACT_INFO, BUSINESS_DETAILS } from "../constants";
 
 const Hero: React.FC = () => {
   const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -70,15 +70,15 @@ const Hero: React.FC = () => {
 
         {/* Verification Badges */}
         <div className="flex flex-wrap justify-center gap-4 sm:gap-8 items-center bg-white/10 backdrop-blur-md py-4 px-6 rounded-2xl border border-white/10 inline-flex mx-auto">
-          <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
-            <CheckCircle className="h-5 w-5 text-blue-400 fill-blue-400/20" />
+          <a href={BUSINESS_DETAILS.justdialProfile} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white font-medium text-sm sm:text-base hover:text-blue-200 transition-colors group">
+            <CheckCircle className="h-5 w-5 text-blue-400 fill-blue-400/20 group-hover:scale-110 transition-transform" />
             <span className="drop-shadow-sm">Justdial Verified</span>
-          </div>
+          </a>
           <div className="hidden sm:block w-px h-6 bg-white/30"></div>
-          <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
-            <CheckCircle className="h-5 w-5 text-green-400 fill-green-400/20" />
+          <a href={BUSINESS_DETAILS.indiamartProfile} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white font-medium text-sm sm:text-base hover:text-green-200 transition-colors group">
+            <CheckCircle className="h-5 w-5 text-green-400 fill-green-400/20 group-hover:scale-110 transition-transform" />
             <span className="drop-shadow-sm">IndiaMART Verified</span>
-          </div>
+          </a>
           <div className="hidden sm:block w-px h-6 bg-white/30"></div>
           <div className="flex items-center gap-2 text-white font-medium text-sm sm:text-base">
             <CheckCircle className="h-5 w-5 text-yellow-400 fill-yellow-400/20" />

@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 import WhatsAppButton from '../../components/WhatsAppButton';
 import SEO from '../../components/SEO';
 import StickyMobileFooter from '../../components/StickyMobileFooter';
-import { PRODUCTS } from '../../constants';
+import { PRODUCTS } from '../../data/products';
 
 const CATEGORY_MAP: Record<string, { name: string, title: string, desc: string, filter: string[] }> = {
     'ctc-tea': {

@@ -10,6 +10,8 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonicalUrl, i
       {noindex && <meta name="robots" content="noindex, follow" />}
       {keywords && <meta name="keywords" content={keywords} />}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+      <meta property="og:type" content="website" />
       {image && <meta property="og:image" content={image} />}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

@@ -24,7 +24,24 @@ export default {
                 brand: {
                     gold: '#d4af37',
                     dark: '#2d3436',
-                }
+                },
+                success: {
+                    DEFAULT: "hsl(var(--success))",
+                    foreground: "hsl(var(--success-foreground))",
+                },
+                warning: {
+                    DEFAULT: "hsl(var(--warning))",
+                    foreground: "hsl(var(--warning-foreground))",
+                },
+            },
+            boxShadow: {
+                'tea': '0 4px 14px -3px hsl(152 45% 25% / 0.2)',
+                'amber': '0 4px 14px -3px hsl(35 85% 55% / 0.25)',
+            },
+            backgroundImage: {
+                'gradient-tea': 'var(--gradient-tea)',
+                'gradient-amber': 'var(--gradient-amber)',
+                'gradient-cream': 'var(--gradient-cream)',
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],

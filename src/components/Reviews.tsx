@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ExternalLink } from "lucide-react";
 
 const reviews = [
   {
@@ -31,13 +31,13 @@ const Reviews: React.FC = () => {
             What Our Clients Say
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
-             <span className="text-2xl font-bold text-gray-900">4.8</span>
-             <div className="flex text-yellow-400">
-                {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-current" />
-                ))}
-             </div>
-             <span className="text-gray-500 text-sm">(Google Reviews)</span>
+            <span className="text-2xl font-bold text-gray-900">4.8</span>
+            <div className="flex text-yellow-400">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-5 w-5 fill-current" />
+              ))}
+            </div>
+            <span className="text-gray-500 text-sm">(Google Reviews)</span>
           </div>
         </div>
 
@@ -53,26 +53,27 @@ const Reviews: React.FC = () => {
               <p className="text-gray-700 mb-6 italic leading-relaxed">"{review.text}"</p>
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-full bg-tea-200 flex items-center justify-center font-bold text-tea-700">
-                    {review.author[0]}
+                  {review.author[0]}
                 </div>
                 <div>
-                    <p className="font-bold text-gray-900">{review.author}</p>
-                    <p className="text-xs text-gray-500 uppercase">{review.role}</p>
+                  <p className="font-bold text-gray-900">{review.author}</p>
+                  <p className="text-xs text-gray-500 uppercase">{review.role}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="mt-10 text-center">
-            <a 
-                href="https://www.google.com/maps/place/Manish+Tea+Traders" 
-                target="_blank" 
-                rel="noreferrer"
-                className="text-tea-600 font-medium hover:text-tea-800 underline decoration-2 underline-offset-4"
-            >
-                Read all reviews on Google
-            </a>
+          <a
+            href="https://share.google/RmPDu73CPzrNemGUs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-tea-600 font-semibold hover:text-tea-700 transition-colors"
+          >
+            Read all reviews on Google
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

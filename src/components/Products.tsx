@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { PRODUCTS } from "../constants";
+import { PRODUCTS } from "../data/products";
 import { Info } from "lucide-react";
 import ProductModal from "./ProductModal";
 import { Link } from "react-router-dom";

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Phone, MapPin, Send, Clock, FileText, CheckCircle, CreditCard } from "lucide-react";
+import { Phone, MapPin, Send, Clock, FileText, CheckCircle, CreditCard, ExternalLink } from "lucide-react";
 import { CONTACT_INFO, BUSINESS_DETAILS } from "../constants";
 
 interface ContactProps {
@@ -49,7 +49,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
               <FileText className="h-6 w-6 text-tea-600" />
               <h3 className="text-2xl font-bold text-gray-900">Request Quote</h3>
             </div>
-            
+
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
@@ -61,7 +61,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tea-500 focus:border-transparent outline-none transition-all bg-gray-50"
                     placeholder="Enter full name"
                     value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
                 </div>
                 <div>
@@ -73,7 +73,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tea-500 focus:border-transparent outline-none transition-all bg-gray-50"
                     placeholder="e.g. 98765 43210"
                     value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   />
                 </div>
               </div>
@@ -81,17 +81,17 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
               <div>
                 <label htmlFor="grade" className="block text-sm font-medium text-gray-700 mb-1">Tea Grade / Product Interest</label>
                 <input
-                  type="text" 
+                  type="text"
                   id="grade"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tea-500 focus:border-transparent outline-none transition-all bg-gray-50"
                   placeholder="e.g. CTC Tea, Rajni Gold..."
                   value={formData.grade}
-                  onChange={(e) => setFormData({...formData, grade: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, grade: e.target.value })}
                 />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                 <div>
+                <div>
                   <label htmlFor="quantity" className="block text-sm font-medium text-gray-700 mb-1">Monthly Demand</label>
                   <input
                     type="text"
@@ -99,7 +99,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tea-500 focus:border-transparent outline-none transition-all bg-gray-50"
                     placeholder="e.g. 50 kg, 200 kg"
                     value={formData.quantity}
-                    onChange={(e) => setFormData({...formData, quantity: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
                   />
                 </div>
                 <div>
@@ -110,11 +110,11 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tea-500 focus:border-transparent outline-none transition-all bg-gray-50"
                     placeholder="City / State"
                     value={formData.location}
-                    onChange={(e) => setFormData({...formData, location: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="notes" className="block text-sm font-medium text-gray-700 mb-1">Additional Notes (Optional)</label>
                 <textarea
@@ -123,7 +123,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tea-500 focus:border-transparent outline-none transition-all bg-gray-50 resize-none"
                   placeholder="Any specific requirement about taste, colour or budget..."
                   value={formData.notes}
-                  onChange={(e) => setFormData({...formData, notes: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                 ></textarea>
               </div>
 
@@ -143,7 +143,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
           <div className="space-y-8 order-1 lg:order-2">
             <div className="bg-tea-50 p-8 rounded-2xl border border-tea-100">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Details</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-white p-3 rounded-full shadow-sm text-tea-600">
@@ -169,13 +169,13 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
                     <h4 className="font-semibold text-gray-900">Call / WhatsApp</h4>
                     <p className="text-gray-800 font-bold mt-1 text-lg font-mono">{CONTACT_INFO.displayPhone}</p>
                     <div className="flex items-center gap-2 mt-1">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span className="text-sm text-gray-600">Available for orders</span>
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span className="text-sm text-gray-600">Available for orders</span>
                     </div>
                   </div>
                 </div>
 
-                 <div className="flex items-start gap-4">
+                <div className="flex items-start gap-4">
                   <div className="bg-white p-3 rounded-full shadow-sm text-tea-600">
                     <CreditCard className="h-6 w-6" />
                   </div>
@@ -185,8 +185,35 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
                       <span className="font-semibold">Proprietor:</span> {BUSINESS_DETAILS.proprietor}
                     </p>
                     <p className="text-sm text-gray-600">
-                       <span className="font-semibold">GST No:</span> {BUSINESS_DETAILS.gst}
+                      <span className="font-semibold">GST No:</span> {BUSINESS_DETAILS.gst}
                     </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-white p-3 rounded-full shadow-sm text-tea-600">
+                    <ExternalLink className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Verified Seller On</h4>
+                    <div className="mt-2 space-y-2">
+                      <a
+                        href={BUSINESS_DETAILS.indiamartProfile}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 text-sm text-tea-700 hover:text-tea-900 hover:underline font-medium transition-colors"
+                      >
+                        IndiaMART Profile ↗
+                      </a>
+                      <a
+                        href={BUSINESS_DETAILS.justdialProfile}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2 text-sm text-tea-700 hover:text-tea-900 hover:underline font-medium transition-colors"
+                      >
+                        Justdial Profile ↗
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -205,13 +232,13 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
 
             {/* Map Embed */}
             <div className="h-64 bg-gray-200 rounded-2xl overflow-hidden shadow-md border border-gray-200">
-              <iframe 
+              <iframe
                 src={CONTACT_INFO.mapEmbedUrl}
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
                 title="Manish Tea Traders Location"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>

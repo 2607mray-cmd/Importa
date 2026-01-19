@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import WhatsAppButton from '../../components/WhatsAppButton';
 import SEO from '../../components/SEO';
-import { LOCATION_PAGES } from '../../constants';
+import { LOCATION_PAGES } from '../../data/locationPages';
 import { MapPin } from 'lucide-react';
 
 const LocationsIndex: React.FC = () => {

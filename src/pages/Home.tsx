@@ -39,7 +39,7 @@ const Home: React.FC = () => {
 
             <main className="flex-grow">
                 <SEO
-                    title="Wholesale Tea Supplier in Siliguri | CTC, Dust & Assam Tea | Manish Tea Traders"
+                    title="Manish Tea Traders | Premium Wholesale Tea Supplier Siliguri & Pan India"
                     description="Buy garden-fresh CTC and Dust tea directly from Siliguri. Serving West Bengal, Bihar & UP since 2004. Get today's wholesale price list."
                     canonicalUrl="https://teatraders.info/"
                     schema={{

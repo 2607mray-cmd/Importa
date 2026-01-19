@@ -74,7 +74,6 @@ const Navbar: React.FC = () => {
             <Link to="/" className="text-sm font-medium text-gray-700 hover:text-tea-600 transition-colors">Home</Link>
             <Link to="/about-us" className="text-sm font-medium text-gray-700 hover:text-tea-600 transition-colors">About Us</Link>
 
-            {/* Products Dropdown */}
             <div className="relative group">
               <button className="text-sm font-medium text-gray-700 hover:text-tea-600 transition-colors flex items-center gap-1">
                 Products
@@ -89,6 +88,11 @@ const Navbar: React.FC = () => {
                 <Link to="/services/private-label-tea" className="block px-6 py-3 text-sm text-tea-700 bg-tea-50 hover:bg-tea-100 font-bold whitespace-nowrap">Private Label</Link>
               </div>
             </div>
+
+            <Link to="/tea-grades" className="text-sm font-bold text-tea-600 hover:text-tea-700 transition-colors flex items-center gap-1">
+              Tea Grades
+              <span className="flex h-2 w-2 rounded-full bg-brand-gold"></span>
+            </Link>
 
             <Link to="/locations" className="text-sm font-medium text-gray-700 hover:text-tea-600 transition-colors">Locations</Link>
             <Link to="/blog" className="text-sm font-medium text-gray-700 hover:text-tea-600 transition-colors">Blog</Link>
@@ -128,6 +132,7 @@ const Navbar: React.FC = () => {
               <Link to="/products/tea-dust" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-tea-600">Tea Dust</Link>
               <Link to="/products/orthodox-leaf" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-tea-600">Orthodox Leaf</Link>
               <Link to="/services/private-label-tea" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-tea-600">Private Label</Link>
+              <Link to="/tea-grades" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-brand-gold bg-brand-gold/5 rounded-md mt-1">Tea Grade Explorer</Link>
             </div>
 
             <Link to="/locations" onClick={() => setIsOpen(false)} className="block px-3 py-3 rounded-lg text-lg font-medium text-gray-700 hover:bg-tea-50">Locations</Link>

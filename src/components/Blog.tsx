@@ -1,5 +1,5 @@
 import React from 'react';
-import { BLOG_POSTS } from '../constants';
+import { BLOG_POSTS } from '../data/blogPosts';
 import { Calendar, User, ArrowLeft, ArrowRight } from 'lucide-react';
 import { BlogPost } from '../types';
 import SEO from './SEO';

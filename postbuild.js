@@ -23,14 +23,19 @@ function extractSlugs(content, webSectionMarker, nextSectionMarker) {
     return slugs;
 }
 
-// Read constants.ts
-const constantsPath = path.resolve('src', 'constants.ts');
-const constantsContent = fs.readFileSync(constantsPath, 'utf-8');
+// Read data files
+const productsPath = path.resolve('src', 'data', 'products.ts');
+const locationsPath = path.resolve('src', 'data', 'locationPages.ts');
+const blogPath = path.resolve('src', 'data', 'blogPosts.ts');
+
+const productsContent = fs.readFileSync(productsPath, 'utf-8');
+const locationsContent = fs.readFileSync(locationsPath, 'utf-8');
+const blogContent = fs.readFileSync(blogPath, 'utf-8');
 
 // Extract dynamic routes
-const productSlugs = extractSlugs(constantsContent, 'export const PRODUCTS', 'export const LOCATION_PAGES');
-const locationSlugs = extractSlugs(constantsContent, 'export const LOCATION_PAGES', 'export const BLOG_POSTS');
-const blogSlugs = extractSlugs(constantsContent, 'export const BLOG_POSTS', null); // Until end of file
+const productSlugs = extractSlugs(productsContent, 'export const PRODUCTS', null);
+const locationSlugs = extractSlugs(locationsContent, 'export const LOCATION_PAGES', null);
+const blogSlugs = extractSlugs(blogContent, 'export const BLOG_POSTS', null);
 
 console.log(`Found ${productSlugs.length} Products`);
 console.log(`Found ${locationSlugs.length} Locations`);
@@ -46,6 +51,9 @@ const staticRoutes = [
     'services/private-label-tea',
     'privacy-policy',
     'terms-of-service',
+    'tea-grades',
+    'tea-blend-calculator',
+    'request-free-tea-samples',
     // Product Categories (Hardcoded as they rarely change)
     'products/ctc-tea',
     'products/tea-dust',
@@ -113,13 +121,13 @@ ${routes.map(route => {
 </urlset>`;
 
 if (fs.existsSync(distDir)) {
-    fs.writeFileSync(path.join(distDir, 'sitemap-index.xml'), sitemapContent);
+    fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapContent);
 }
 
 // Determine public dir
 const publicDir = path.resolve('public');
 if (fs.existsSync(publicDir)) {
-    fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), sitemapContent); // Keep source in sync
+    fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapContent); // Keep source in sync
 }
 
 console.log('--- Static Routes & Sitemap Completed Successfully ---');
