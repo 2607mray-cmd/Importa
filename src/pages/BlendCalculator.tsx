@@ -17,7 +17,7 @@ const BlendCalculator = () => {
             <SEO
                 title="Tea Blend Cost & Ratio Calculator | Manish Tea Traders B2B Utility"
                 description="Calculate tea blend ratios, wholesale costs, and margins accurately. An essential tool for tea traders, blenders, and private label brands."
-                canonicalUrl="https://teatraders.info/tea-blend-calculator"
+                canonicalUrl="https://teatraders.info/tea-blend-calculator/"
             />
             <Navbar />
             <div className="pt-16">

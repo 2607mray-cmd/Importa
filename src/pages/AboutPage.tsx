@@ -15,7 +15,7 @@ const AboutPage: React.FC = () => {
                 <SEO
                     title="About Manish Tea Traders | Heritage & Sourcing | Siliguri Tea Wholesaler"
                     description="Learn about our journey from a small tea shop to a major wholesale supplier in Siliguri. Direct sourcing from Assam & Darjeeling gardens."
-                    canonicalUrl="https://teatraders.info/about-us"
+                    canonicalUrl="https://teatraders.info/about-us/"
                     image="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?q=80&w=1200"
                     schema={{
                         "@context": "https://schema.org",
@@ -48,7 +48,7 @@ const AboutPage: React.FC = () => {
                                         "@type": "ListItem",
                                         "position": 2,
                                         "name": "About Us",
-                                        "item": "https://teatraders.info/about-us"
+                                        "item": "https://teatraders.info/about-us/"
                                     }
                                 ]
                             }

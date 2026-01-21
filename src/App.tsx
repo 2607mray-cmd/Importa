@@ -28,10 +28,13 @@ import BlendCalculator from './pages/BlendCalculator';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
+import { initGA } from './lib/analytics';
+
 const ScrollToTopOnNavigate = () => {
     const { pathname } = useLocation();
 
     useEffect(() => {
+        initGA();
         // Only scroll if no hash
         if (!window.location.hash) {
             window.scrollTo(0, 0);

@@ -3,6 +3,7 @@ import React from "react";
 import { CONTACT_INFO, BUSINESS_DETAILS } from "../constants";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
+import { trackWhatsAppClick } from "../lib/analytics";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -88,6 +89,7 @@ const Footer: React.FC = () => {
                   href={CONTACT_INFO.whatsappChannel}
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => trackWhatsAppClick("Footer")}
                   className="inline-flex items-center gap-2 bg-[#25D366] text-white px-3 py-2 rounded-lg text-xs font-bold hover:bg-green-600 transition-colors"
                 >
                   Join WhatsApp →

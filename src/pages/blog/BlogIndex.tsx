@@ -17,7 +17,7 @@ const BlogIndex: React.FC = () => {
                     <SEO
                         title="Tea Industry Blog | Wholesale Market Insights | Manish Tea Traders"
                         description="Read our latest insights on the Indian tea market, wholesale guides, and tips for starting a tea brand in India."
-                        canonicalUrl="https://teatraders.info/blog"
+                        canonicalUrl="https://teatraders.info/blog/"
                         image="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9"
                     />
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

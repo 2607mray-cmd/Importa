@@ -15,7 +15,7 @@ const PrivateLabelPage: React.FC = () => {
                 <SEO
                     title="Private Label Tea Packaging Services India | Start Your Tea Brand"
                     description="Launch your own tea brand with our Private Label services. We handle sourcing, blending, and packaging. Low MOQ for startups."
-                    canonicalUrl="https://teatraders.info/services/private-label-tea"
+                    canonicalUrl="https://teatraders.info/services/private-label-tea/"
                     image="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03"
                     schema={{
                         "@context": "https://schema.org",

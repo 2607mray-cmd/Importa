@@ -15,7 +15,7 @@ const ContactPage: React.FC = () => {
                 <SEO
                     title="Contact Us | Wholesale Tea Enquiries | Manish Tea Traders"
                     description="Contact Manish Tea Traders for bulk tea orders. Phone: +91 70019 58588. Visit us in Siliguri, West Bengal."
-                    canonicalUrl="https://teatraders.info/contact-us"
+                    canonicalUrl="https://teatraders.info/contact-us/"
                     image="https://teatraders.info/logo.png"
                 />
                 <Contact selectedProduct="" />

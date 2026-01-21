@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { trackWhatsAppClick } from "../lib/analytics";
 import { Phone, MapPin, Send, Clock, FileText, CheckCircle, CreditCard, ExternalLink } from "lucide-react";
 import { CONTACT_INFO, BUSINESS_DETAILS } from "../constants";
 
@@ -24,6 +25,7 @@ const Contact: React.FC<ContactProps> = ({ selectedProduct }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackWhatsAppClick("Contact Form");
     const text = `*New Price Inquiry* %0A%0AName: ${formData.name}%0APhone: ${formData.phone}%0AGrade Required: ${formData.grade}%0AMonthly Demand: ${formData.quantity}%0ALocation: ${formData.location}%0ANotes: ${formData.notes}`;
     const url = `https://wa.me/${CONTACT_INFO.phone}?text=${text}`;
     window.open(url, '_blank');

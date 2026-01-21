@@ -21,7 +21,7 @@ const RequestSamples: React.FC = () => {
             <SEO
                 title="Request Free Tea Samples | Wholesale Tea Supplier Siliguri | Manish Tea Traders"
                 description="Experience premium Assam & Darjeeling tea quality before bulk ordering. Trusted by tea traders. Request free samples from Siliguri's leading tea wholesaler."
-                canonicalUrl="https://teatraders.info/request-free-tea-samples"
+                canonicalUrl="https://teatraders.info/request-free-tea-samples/"
             />
 
             <main className="flex-grow bg-white">

@@ -11,7 +11,7 @@ const PrivacyPolicy: React.FC = () => {
                 <SEO
                     title="Privacy Policy | Manish Tea Traders"
                     description="Privacy Policy for Manish Tea Traders. How we comply with Indian laws and protect your data."
-                    canonicalUrl="https://teatraders.info/privacy-policy"
+                    canonicalUrl="https://teatraders.info/privacy-policy/"
                 />
                 <div className="max-w-3xl mx-auto prose prose-tea">
                     <h1>Privacy Policy</h1>

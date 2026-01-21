@@ -16,7 +16,7 @@ const LocationsIndex: React.FC = () => {
                 <SEO
                     title="Tea Wholesale Supply Network | Major Cities in India"
                     description="We supply wholesale tea to major cities across West Bengal, Bihar, UP, Jharkhand and beyond. Check our network coverage."
-                    canonicalUrl="https://teatraders.info/locations"
+                    canonicalUrl="https://teatraders.info/locations/"
                     image="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9"
                 />
 

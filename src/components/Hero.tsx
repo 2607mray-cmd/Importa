@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight, MessageCircle, CheckCircle } from "lucide-react";
 import { CONTACT_INFO, BUSINESS_DETAILS } from "../constants";
+import { trackWhatsAppClick } from "../lib/analytics";
 
 const Hero: React.FC = () => {
   const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -62,6 +63,7 @@ const Hero: React.FC = () => {
             href={`https://wa.me/${CONTACT_INFO.phone}`}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick("Hero Section")}
             className="bg-white hover:bg-gray-100 text-tea-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
           >
             WhatsApp Us Directly <MessageCircle className="h-5 w-5 text-green-600" />

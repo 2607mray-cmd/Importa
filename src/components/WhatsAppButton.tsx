@@ -1,6 +1,6 @@
 import React from "react";
 import { ClipboardList } from "lucide-react";
-import { CONTACT_INFO } from "../constants";
+import { trackWhatsAppClick } from "../lib/analytics";
 
 const WhatsAppButton: React.FC = () => {
   return (
@@ -8,6 +8,7 @@ const WhatsAppButton: React.FC = () => {
       href="https://forms.gle/gpZAjNoz8QAriJMe8"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackWhatsAppClick("Floating Button")}
       className="fixed bottom-6 right-6 z-50 bg-tea-600 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center gap-2 group"
       aria-label="Request Tea Samples"
     >

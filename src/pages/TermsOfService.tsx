@@ -11,7 +11,7 @@ const TermsOfService: React.FC = () => {
                 <SEO
                     title="Terms of Service | Manish Tea Traders"
                     description="Terms of Service for wholesale purchases from Manish Tea Traders, Siliguri."
-                    canonicalUrl="https://teatraders.info/terms-of-service"
+                    canonicalUrl="https://teatraders.info/terms-of-service/"
                 />
                 <div className="max-w-3xl mx-auto prose prose-tea">
                     <h1>Terms of Service</h1>
