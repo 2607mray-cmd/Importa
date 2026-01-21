@@ -4,7 +4,7 @@ import ReactGA from "react-ga4";
 export const GA_MEASUREMENT_ID = "G-51CXM4KKZ2";
 
 // Replace with your Webhook URL (e.g., Formspree, Make.com, etc.)
-export const TRACKING_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzEw_HlIkYpef7B7RziiFWoaFpR_m7jtKRUnwIZUFGKyUZu9nS9zoB74JQLa_GOd17D/exec";
+export const TRACKING_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyO3wOtQcSrk6_5joKqffSQTtNOJg5PicLTlikAkKXbJgvl6bubvA2Raph2O_ubmdXk/exec";
 
 export const initGA = () => {
     if (GA_MEASUREMENT_ID && !GA_MEASUREMENT_ID.includes("XXX")) {
