@@ -18,30 +18,29 @@ export const trackWhatsAppClick = async (location: string) => {
 
     // 1. Track in GA4
     if (GA_MEASUREMENT_ID && !GA_MEASUREMENT_ID.includes("XXX")) {
-        ReactGA.event({
-            category: "WhatsApp",
-            action: "Click",
-            label: location,
-            value: 1,
-            nonInteraction: false,
+        ReactGA.event("whatsapp_click", {
+            click_location: location,
+            page_path: pagePath,
+            timestamp: timestamp
         });
     }
 
-    // 2. Silent Webhook Notification
+    // 2. Silent Webhook Notification (Google Sheets)
     if (TRACKING_WEBHOOK_URL) {
         try {
-            await fetch(TRACKING_WEBHOOK_URL, {
+            // Using 'no-cors' to avoid CORS preflight (OPTIONS) issues with Google Apps Script.
+            // Sending the JSON as a string in the body. Since we don't set Content-Type to JSON, 
+            // it behaves as a 'simple request' and populates e.postData.contents in the script.
+            fetch(TRACKING_WEBHOOK_URL, {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
+                mode: "no-cors",
                 body: JSON.stringify({
                     event: "WhatsApp Click",
                     location: location,
                     page: pagePath,
-                    timestamp: timestamp,
-                    userAgent: navigator.userAgent
+                    timestamp: timestamp
                 }),
+                keepalive: true
             });
         } catch (error) {
             console.error("Silent tracking failed", error);
